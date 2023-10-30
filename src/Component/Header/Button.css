@@ -1,0 +1,13 @@
+
+
+.Button{
+    height: 35px;
+    width: 115px;
+    background-color: #01EEFE;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: 15px;
+    margin-top: 20px;
+}

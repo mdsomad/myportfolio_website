@@ -1,0 +1,105 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.main {
+  position: absolute;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 48%,
+    rgba(1, 214, 254, 1) 71%
+  );
+  height: 100vh;
+  width: 100%;
+  /* overflow-y : scroll; */
+}
+
+.div {
+  width: 96%;
+  height: 93vh;
+  background-color: #20242d;
+  position: absolute;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+}
+
+.mainBox {
+  display: flex;
+  width: 50%;
+  /* background-color: blue; */
+  padding-top: 180px;
+  padding-left: 150px;
+}
+
+.mainBox2 {
+  width: 100%;
+  /* background-color: gray; */
+}
+
+.h5 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.h1 {
+  padding-top: 10px;
+  font-size: 50px;
+  font-weight: 500;
+}
+.texrow {
+  padding-top: 10px;
+  padding-left: 20px;
+  font-size: 50px;
+  font-weight: 500;
+  color: #01eefe;
+}
+
+.phoneNumberh4Tag {
+  font-size: 20px;
+  padding-left: 15px;
+  padding-top: 5px;
+  font-weight: 700;
+}
+
+.mainAvatarDiv {
+  /* background-color: red; */
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.colDiv {
+  display: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+  margin-top: 100px;
+}
+
+.AvatarDiv {
+  position: relative;
+  height: 35vh;
+  width: 35vh;
+  background-color: #01eefe;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 50px;
+  margin-left: 70px;
+
+  box-shadow: 0px 1px 2px 0px rgba(0, 255, 255, 0.7),
+    1px 2px 4px 0px rgba(0, 255, 255, 0.7),
+    2px 8px 16px 0px rgba(0, 255, 255, 0.7),
+    2px 8px 20px 0px rgba(0, 255, 255, 0.7);
+}
+.AvatarDiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
