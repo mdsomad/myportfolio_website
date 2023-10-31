@@ -44,12 +44,14 @@
 .h5 {
   font-size: 30px;
   font-weight: 500;
+  color:white
 }
 
 .h1 {
   padding-top: 10px;
   font-size: 50px;
   font-weight: 500;
+  color:white
 }
 .texrow {
   padding-top: 10px;
@@ -64,6 +66,7 @@
   padding-left: 15px;
   padding-top: 5px;
   font-weight: 700;
+  color:white
 }
 
 .mainAvatarDiv {
