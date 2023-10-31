@@ -1,8 +1,14 @@
+"use client";
+import SkillsBox from '@/Component/SkillsBox/SkillsBox'
 import React from 'react'
 
 const skills = () => {
   return (
-    <div>Skills</div>
+    <div>
+
+      <SkillsBox/>
+      
+    </div>
   )
 }
 

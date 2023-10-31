@@ -1,0 +1,12 @@
+
+
+.skillsBox{
+    display: flex;
+    height: 120px;
+    width: 250px;
+    background-color: #1F1E1E;
+    border-Top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    align-items: center;
+}
+
