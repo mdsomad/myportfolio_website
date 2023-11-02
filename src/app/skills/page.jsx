@@ -2,6 +2,13 @@
 import SkillsBox from "@/Component/SkillsBox/SkillsBox";
 import React, { useState } from "react";
 
+import '../skills/Skills.css'
+import Languages from '@/Component/skillsPages/Languages';
+import Frameworks from '@/Component/skillsPages/Frameworks';
+import Backend from '@/Component/skillsPages/Backend';
+import Desing from '@/Component/skillsPages/Desing';
+import Extra from '@/Component/skillsPages/Extra';
+
 const skillTypeTabs = ["Language", "Framework", "Backend", "Design", "Extras"];
 
 const skillData = {
@@ -11,6 +18,10 @@ const skillData = {
   Design: [{ name: "Figma" }],
   Extras: [],
 };
+
+// import ProgressBar from "./ProgressBarLabels.module.css"
+
+
 
 const skills = () => {
   const [skillType, setSkillType] = useState("Language");
@@ -38,8 +49,11 @@ const skills = () => {
           <SkillsBox name={skill.name} />
         ))}
       </div>
+
+      <Desing/>
+      <Extra/>
     </div>
   );
 };
 
-export default skills;
+export default skills
