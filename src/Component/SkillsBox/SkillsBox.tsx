@@ -8,7 +8,7 @@ const SkillsBox = (props) => {
     <div className="skillsBox">
       <a
         target="_blank"
-        href="https://www.linkedin.com/in/md-somad-8827ab256"
+        href={props.link}
         rel="noopener noreferrer"
       >
         <img
@@ -21,7 +21,7 @@ const SkillsBox = (props) => {
 
       <div style={{ paddingBottom: "10px" }}>
         <h5 style={{ paddingBottom: "5px", color: "white" }}>
-          {props.frameworkName}
+          {props.name}
         </h5>
         <ProgressBarLabels Progress={props.Progress} />
       </div>

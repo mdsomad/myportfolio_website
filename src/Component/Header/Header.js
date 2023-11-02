@@ -19,7 +19,7 @@ const Header = () => {
           <Link href="/">{<Button name={"Home"}/>}</Link>
           <Link href="/skills">{<Button name={"Skills"}/>}</Link>
           <Link href="/projects">{<Button name={"Projects"}/>}</Link>
-          <Link href="/crow">{<Button name={"Crow"}/>}</Link>
+          <Link href="/crew">{<Button name={"Crew"}/>}</Link>
           
            {
            

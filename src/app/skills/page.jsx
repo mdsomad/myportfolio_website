@@ -3,20 +3,21 @@ import SkillsBox from "@/Component/SkillsBox/SkillsBox";
 import React, { useState } from "react";
 
 import '../skills/Skills.css'
-import Languages from '@/Component/skillsPages/Languages';
-import Frameworks from '@/Component/skillsPages/Frameworks';
-import Backend from '@/Component/skillsPages/Backend';
-import Desing from '@/Component/skillsPages/Desing';
-import Extra from '@/Component/skillsPages/Extra';
 
-const skillTypeTabs = ["Language", "Framework", "Backend", "Design", "Extras"];
+import languagesData from "@/models/languagesData";
+import frameworksData from "@/models/frameworksData";
+import backendData from "@/models/backendData";
+import designData from "@/models/designData";
+import extraData from "@/models/extraData";
+
+const skillTypeTabs = ["Language", "Framework", "Backend", "Design", "Extra"];
 
 const skillData = {
-  Language: [{ name: "Dart" }],
-  Framework: [{ name: "Flutter" }, { name: "React" }],
-  Backend: [{ name: "ExpressJS" }],
-  Design: [{ name: "Figma" }],
-  Extras: [],
+  Language: languagesData,
+  Framework: frameworksData,
+  Backend: backendData,
+  Design: designData,
+  Extra: extraData,
 };
 
 // import ProgressBar from "./ProgressBarLabels.module.css"
@@ -27,7 +28,7 @@ const skills = () => {
   const [skillType, setSkillType] = useState("Language");
 
   return (
-    <div className="p-4">
+    <div className="p-4 py-0">
       <div className="flex w-[100%] justify-between p-4 py-10">
         {skillTypeTabs.map((skillType_) => (
           <button
@@ -44,14 +45,11 @@ const skills = () => {
         ))}
       </div>
 
-      <div className="p-10 flex flex-wrap gap-10">
+      <div className="px-4 pl-10 flex flex-wrap gap-10">
         {skillData[skillType].map((skill) => (
-          <SkillsBox name={skill.name} />
+          <SkillsBox {...skill} />
         ))}
       </div>
-
-      <Desing/>
-      <Extra/>
     </div>
   );
 };
