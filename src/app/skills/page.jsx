@@ -1,14 +1,27 @@
 "use client";
-import SkillsBox from '@/Component/SkillsBox/SkillsBox'
 import React from 'react'
+import '../skills/Skills.css'
+import Languages from '@/Component/skillsPages/Languages';
+import Frameworks from '@/Component/skillsPages/Frameworks';
+import Backend from '@/Component/skillsPages/Backend';
+import Desing from '@/Component/skillsPages/Desing';
+import Extra from '@/Component/skillsPages/Extra';
+// import ProgressBar from "./ProgressBarLabels.module.css"
+
+
 
 const skills = () => {
   return (
-    <div>
+   <>
 
-      <SkillsBox/>
-      
-    </div>
+   {/* <Languages/> */}
+   {/* <Frameworks/> */}
+   {/* <Backend/> */}
+   <Desing/>
+   <Extra/>
+   
+   
+   </>
   )
 }
 
