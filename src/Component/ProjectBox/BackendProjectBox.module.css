@@ -1,0 +1,48 @@
+
+
+.container{
+    height: auto;
+    min-height: 220px;
+    width: 95%;
+    background-color: #36454f;
+    margin-top: 40px;
+    border-radius: 20px;
+    display: flex;
+    padding-left: 30px;
+}
+
+
+.nameText{
+    font-size: 25px;
+    color: white;
+    margin-top: 28px;
+    font-weight: 500;
+}
+
+.frameworkText{
+    font-size: 25px;
+    color: white;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.sourceCodeText{
+    font-size: 25px;
+    color: white;
+    margin-top: 10px;
+    font-weight: 400;
+    /* white-space: nowrap; */
+    
+   
+}
+
+.linkkText{
+    font-size: 25px;
+    color: #589bff;
+    margin-top: 10px;
+    font-weight: 300;
+    margin-left: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+}

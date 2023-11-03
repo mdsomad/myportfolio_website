@@ -3,13 +3,19 @@
 import React from "react";
 import "./projects.css";
 import FrontendBox from "@/Component/ProjectBox/FrontendBox";
+import BackendProjectBox from "@/Component/ProjectBox/BackendProjectBox";
+
 
 const projects = () => {
   return (
     <div className="main-div">
+         
+         <BackendProjectBox/>
+      
+      
+        {/* <FrontendBox/>
         <FrontendBox/>
-        <FrontendBox/>
-        <FrontendBox/>
+        <FrontendBox/> */}
     </div>
   );
 };
