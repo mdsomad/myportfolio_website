@@ -1,0 +1,108 @@
+.containerdiv {
+  height: 650px;
+  width: 95%;
+  background-color: #1b1b1b;
+  margin-top: 30px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: end;
+  padding: 40px;
+}
+
+.containerchild {
+  height: 100%;
+  width: 550px;
+  background-color: #20242d;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerscreenshots {
+  /* height: 100%;
+    width: 550px; */
+  /* background-color: yellow; */
+  flex-grow: 1;
+  margin-right: 20px;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.screenshotsbox {
+  height: 100%;
+  width: 280px;
+  background-color: purple;
+  margin-right: 20px;
+  /* display: inline-block; */
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.h3 {
+  font-weight: 700;
+  color: white;
+  font-size: 30px;
+}
+
+.buttonproject {
+  display: flex;
+  height: 35px;
+  width: 120px;
+  background-color: #01d7e6;
+  border-radius: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.buttonprojecticon {
+  height: 20px;
+  width: 20px;
+}
+
+.h6 {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.h5 {
+  color: white;
+  padding-left: 15px;
+  white-space: nowrap;
+}
+
+.sourcecodetext {
+  color: #589bff;
+  padding-left: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.h1 {
+  color: white;
+  font-size: 30px;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.frameworklogoimgTag {
+  margin-top: 40px;
+  height: 240px;
+  width: 195px;
+}
+
+/* 
+
+.cont{
+    height:100px;
+    width: 100px;
+    background-color: #01D7E6;
+} */
