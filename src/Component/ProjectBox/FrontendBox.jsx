@@ -2,7 +2,7 @@ import React from "react";
 
 import FrontendBoxCss from "../ProjectBox/FrontendBox.module.css";
 
-const FrontendBox = () => {
+const FrontendBox = (props) => {
   return (
     // <div className={forn.cont}></div>
 
@@ -36,7 +36,7 @@ const FrontendBox = () => {
 
       <div className={FrontendBoxCss.containerchild}>
         <div style={{ display: "flex", marginTop: "40px", gap: "50px" }}>
-          <h3 className={FrontendBoxCss.h3}>Socal Media</h3>
+          <h3 className={FrontendBoxCss.h3}>{props.appName}</h3>
 
           <a
             target="_blank"
