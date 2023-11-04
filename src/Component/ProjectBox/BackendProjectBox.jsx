@@ -2,14 +2,14 @@ import React from "react";
 import BackendProjectBoxCss from "../ProjectBox/BackendProjectBox.module.css";
 import { Button } from "@material-tailwind/react";
 
-const BackendProjectBox = () => {
+const BackendProjectBox = (props) => {
   let name = "Socal Media";
   return (
     <div className={BackendProjectBoxCss.container}>
       <div className={BackendProjectBoxCss.textContainer}>
-        <h1 className={BackendProjectBoxCss.nameText}>Name: {name}</h1>
+        <h1 className={BackendProjectBoxCss.nameText}>Name: {props.appName}</h1>
         <h5 className={BackendProjectBoxCss.frameworkText}>
-          Using Framework: Express.js
+          Using Framework: {props.frameworkName}
         </h5>
 
         <div style={{ display: "flex", marginTop: "15px" }}>
@@ -17,7 +17,7 @@ const BackendProjectBox = () => {
             Source Code Link :
           </h6>
           <h6 className={BackendProjectBoxCss.linkkText}>
-            https://github.com/mdsomad/Social-media-backend-with-node-js
+             {props.sourceCodeLink}
           </h6>
         </div>
       </div>
@@ -27,13 +27,13 @@ const BackendProjectBox = () => {
       <div className={BackendProjectBoxCss.logoContainer}>
         <img
           className={BackendProjectBoxCss.frameworkLogo}
-          src="./images/node-js.svg"
+          src={props.frameworkLogo}
           alt=""
         />
 
         <a
           target="_blank"
-          href="https://github.com/mdsomad/Social-media-backend-with-node-js"
+          href={props.sourceCodeLink}
           rel="noopener noreferrer"
         >
           <div className={BackendProjectBoxCss.buttonContainer}>

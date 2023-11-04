@@ -6,8 +6,8 @@ import FrontendBox from "@/Component/ProjectBox/FrontendBox";
 import BackendProjectBox from "@/Component/ProjectBox/BackendProjectBox";
 import frameworkProjectData from "@/models/projectData/frontendProjectData";
 import backendProjectData from "@/models/projectData/backendProjectData";
-import LiveAppBox from "@/Component/ProjectBox/liveAppBox";
 import liveAppData from "@/models/projectData/liveAppsData";
+import LiveAppBox from "@/Component/ProjectBox/LiveAppBox";
 
 const skillTypeTabs = ["FrontendProjects", "BackendProjects", "LiveApps"];
 
@@ -25,7 +25,7 @@ const BackendProjects = () => {
   return (
     <div className="px-4 pl-10 flex flex-wrap gap-10">
       {backendProjectData.map((skill) => (
-        <BackendProjectBox />
+        <BackendProjectBox {...skill} />
       ))}
     </div>
   );
@@ -34,7 +34,7 @@ const LiveApps = () => {
   return (
     <div className="px-4 pl-10 flex flex-wrap gap-10">
       {liveAppData.map((skill) => (
-        <LiveAppBox />
+        <LiveAppBox {...skill} />
       ))}
     </div>
   );
