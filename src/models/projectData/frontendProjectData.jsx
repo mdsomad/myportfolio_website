@@ -13,7 +13,7 @@ const frameworkProjectData = [
     isYoutube: true,
   },
   {
-    appName: "Socal Media",
+    appName: "Socal Media 22",
     screenshots: [
       "./screenshots/Screenshot_1690008176.png",
       "./screenshots/Screenshot_1690264306.png",
