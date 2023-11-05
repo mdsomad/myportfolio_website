@@ -1,0 +1,159 @@
+.mainContainer{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 30px;
+    
+}
+
+.childContainer{
+    /* height: 160px; */
+    /* max-height: 150px; */
+    display: flex;
+    width: 95%;
+    background-color: #3C424E;
+    border-radius: 18px;
+    justify-content: center;
+    align-items: center
+}
+
+
+.crewTextBox{
+    margin-left: 30px;
+    margin-top: 20px;
+    color: white;
+
+}
+
+.nameTag{
+   font-size: 25px;
+   font-weight: 600;
+}
+
+.roleTag{
+   font-size: large;
+   margin-top: 5px;
+   margin-bottom: 15px;
+}
+
+.websiteLinkTextTag{
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+
+.linkTag{
+    font-size: 20px;
+    margin-left: 5px;
+    color: cornflowerblue;
+    margin-bottom: 30px;
+}
+
+.visitButton{
+    background-color: #01d7e6;
+    width: 150px;
+    height: 45px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-right:30px;
+}
+
+/** Tablets size */
+@media (max-width: 900px) {
+   .mainContainer{
+        /* background-color: greenyellow; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        gap: 30px;
+    }
+
+
+    .childContainer{
+        /* height: 160px; */
+        /* max-height: 150px; */
+        display: flex;
+        width: 95%;
+        background-color: #3C424E;
+        border-radius: 18px;
+        justify-content: center;
+        align-items: center
+    }
+    
+    
+    .crewTextBox{
+        margin-left: 30px;
+        margin-top: 20px;
+        color: white;
+    
+    }
+    
+    .nameTag{
+       font-size: 25px;
+       font-weight: 600;
+    }
+    
+    .roleTag{
+       font-size: large;
+       margin-top: 5px;
+       margin-bottom: 15px;
+    }
+    
+    .websiteLinkTextTag{
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+    
+    
+    .linkTag{
+        font-size: 20px;
+        margin-left: 5px;
+        color: cornflowerblue;
+        margin-bottom: 30px;
+    }
+    
+    .visitButton{
+        background-color: #01d7e6;
+        width: 150px;
+        height: 45px;
+        border-radius: 30px;
+        font-weight: 500;
+        font-size: 15px;
+        align-items: center;
+        justify-content: center;
+        margin-right:30px;
+    }
+    
+    
+}
+
+
+
+/** Mobile size */
+@media (max-width: 480px) {
+   .mainContainer{
+        /* background-color: blue; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .childContainer{
+        height: 93px;
+        /* max-height: 150px; */
+        width: 90%;
+        background-color: hotpink;
+        border-radius: 18px;
+    }
+    
+    
+}
