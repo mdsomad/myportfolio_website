@@ -2,7 +2,7 @@
 import SkillsBox from "@/Component/SkillsBox/SkillsBox";
 import React, { useState } from "react";
 
-import '../skills/Skills.css'
+import "../skills/Skills.css";
 
 import languagesData from "@/models/languagesData";
 import frameworksData from "@/models/frameworksData";
@@ -21,8 +21,6 @@ const skillData = {
 };
 
 // import ProgressBar from "./ProgressBarLabels.module.css"
-
-
 
 const skills = () => {
   const [skillType, setSkillType] = useState("Language");
@@ -54,4 +52,4 @@ const skills = () => {
   );
 };
 
-export default skills
+export default skills;

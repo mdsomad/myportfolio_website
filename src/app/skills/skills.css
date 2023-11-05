@@ -1,13 +1,8 @@
-
-
-.container-div{
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: px;
-    padding-top: 30px;
-   
+.container-div {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: px;
+  padding-top: 30px;
 }
-
-
 
 /* {display:"flex",flexWrap:"wrap",gap:"15px",paddingLeft:"50px",paddingTop:"10px"} */

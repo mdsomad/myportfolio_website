@@ -12,6 +12,7 @@ import LiveAppBox from "@/Component/ProjectBox/LiveAppBox";
 const skillTypeTabs = ["FrontendProjects", "BackendProjects", "LiveApps"];
 
 const FrontEndProjects = () => {
+
   return (
     <div className="px-4 pl-10 flex flex-wrap gap-10">
       {frameworkProjectData.map((skill) => (
@@ -59,7 +60,6 @@ const projects = () => {
             }`}
             onClick={() => {
               setSkillType(skillType_);
-              console.log(skillType_);
             }}
           >
             {skillType_}

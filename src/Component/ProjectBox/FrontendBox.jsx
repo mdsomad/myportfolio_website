@@ -64,7 +64,6 @@ const FrontendBox = (props) => {
                 </div>
               </a>
             </div>
-
           </div>
         ) : (
           <></>

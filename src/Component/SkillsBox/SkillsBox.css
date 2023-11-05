@@ -1,15 +1,12 @@
-
-
-.skillsBox{
-    display: flex;
-    height: 120px;
-    width: 265px;
-    background-color: #1F1E1E;
-    border-Top-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    align-items: center;
-    margin-top: 40px;
-    margin-left: 10px;
-    margin-right: 20px; 
+.skillsBox {
+  display: flex;
+  height: 120px;
+  width: 265px;
+  background-color: #1f1e1e;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-right: 20px;
 }
-

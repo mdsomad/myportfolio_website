@@ -1,94 +1,84 @@
-
-
-.container{
-    height: auto;
-    min-height: 220px;
-    width: 95%;
-    background-color: #36454f;
-    margin-top: 40px;
-    border-radius: 20px;
-    display: flex;
-    padding-left: 30px;
+.container {
+  height: auto;
+  min-height: 220px;
+  width: 95%;
+  background-color: #36454f;
+  margin-top: 40px;
+  border-radius: 20px;
+  display: flex;
+  padding-left: 30px;
 }
 
-
-.nameText{
-    font-size: 25px;
-    color: white;
-    margin-top: 35px;
-    font-weight: 500;
+.nameText {
+  font-size: 25px;
+  color: white;
+  margin-top: 35px;
+  font-weight: 500;
 }
 
-.frameworkText{
-    font-size: 25px;
-    color: white;
-    margin-top: 10px;
-    font-weight: 400;
+.frameworkText {
+  font-size: 25px;
+  color: white;
+  margin-top: 10px;
+  font-weight: 400;
 }
 
-.sourceCodeText{
-    font-size: 25px;
-    color: white;
-    margin-top: 10px;
-    font-weight: 400;
-    /* white-space: nowrap; */
-    
-   
+.sourceCodeText {
+  font-size: 25px;
+  color: white;
+  margin-top: 10px;
+  font-weight: 400;
+  /* white-space: nowrap; */
 }
 
-.linkkText{
-    font-size: 25px;
-    color: #589bff;
-    margin-top: 10px;
-    font-weight: 300;
-    margin-left: 10px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    
+.linkkText {
+  font-size: 25px;
+  color: #589bff;
+  margin-top: 10px;
+  font-weight: 300;
+  margin-left: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
-.logoContainer{
-    /* background-color: red; */
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    margin-right: 30px;
+.logoContainer {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-right: 30px;
 }
 
-
-.frameworkLogo{
-    height: 100px;
-    width: 100px;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    margin-right: 5px;
+.frameworkLogo {
+  height: 100px;
+  width: 100px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  margin-right: 5px;
 }
-
-
 
 .buttonContainer {
-    height: 40px;
-    width: 150px;
-    background-color: #01d7e6;
-    border-radius: 30px;
-    display: flex;
-    justify-items: center;
-    justify-content: start;
+  height: 40px;
+  width: 150px;
+  background-color: #01d7e6;
+  border-radius: 30px;
+  display: flex;
+  justify-items: center;
+  justify-content: start;
 }
 
-
-.buttonIcon{
-   height: 27px;
-   width: 27px;
-   margin-top: 6px;
-   margin-right: 10px;
-   margin-left: 10px;
+.buttonIcon {
+  height: 27px;
+  width: 27px;
+  margin-top: 6px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .projectButtonText {
-    font-size: 14px;
-    font-weight: 600;
-    align-self: center;
-    color: #36454f;
-  }
+  font-size: 14px;
+  font-weight: 600;
+  align-self: center;
+  color: #36454f;
+}

@@ -6,11 +6,7 @@ import skills from "@/app/skills/page";
 const SkillsBox = (props) => {
   return (
     <div className="skillsBox">
-      <a
-        target="_blank"
-        href={props.link}
-        rel="noopener noreferrer"
-      >
+      <a target="_blank" href={props.link} rel="noopener noreferrer">
         <img
           style={{ paddingLeft: "15px", marginRight: "15px" }}
           src={props.logo}
@@ -20,9 +16,7 @@ const SkillsBox = (props) => {
       </a>
 
       <div style={{ paddingBottom: "10px" }}>
-        <h5 style={{ paddingBottom: "5px", color: "white" }}>
-          {props.name}
-        </h5>
+        <h5 style={{ paddingBottom: "5px", color: "white" }}>{props.name}</h5>
         <ProgressBarLabels Progress={props.Progress} />
       </div>
 

@@ -2,22 +2,23 @@ import React from "react";
 import LiveAppBoxCss from "../ProjectBox/liveAppBox.module.css";
 import { Button } from "@material-tailwind/react";
 
-const LiveAppBox = () => {
-  let name = "Socal Media";
+const LiveAppBox = (props) => {
   return (
     <div className={LiveAppBoxCss.container}>
       <div className={LiveAppBoxCss.textContainer}>
-        <h1 className={LiveAppBoxCss.nameText}>Name: {name}</h1>
-        <h5 className={LiveAppBoxCss.frameworkText}>
-          Using Framework: Express.js
-        </h5>
+        <h1 className={LiveAppBoxCss.nameText}>Name: {props.appName}</h1>
 
-        <div style={{ display: "flex", marginTop: "15px" }}>
-          <h6 className={LiveAppBoxCss.sourceCodeText}>
-            Source Code Link :
-          </h6>
+        <p
+          dangerouslySetInnerHTML={{ __html: props.description }}
+          style={{ color: "white" }}
+        ></p>
+
+        <div
+          style={{ display: "flex", marginTop: "5px", marginBottom: "30px" }}
+        >
+          <h6 className={LiveAppBoxCss.sourceCodeText}>Play Store :</h6>
           <h6 className={LiveAppBoxCss.linkkText}>
-            https://github.com/mdsomad/Social-media-backend-with-node-js
+            {props.googlePlayStoreLink}
           </h6>
         </div>
       </div>
@@ -27,22 +28,22 @@ const LiveAppBox = () => {
       <div className={LiveAppBoxCss.logoContainer}>
         <img
           className={LiveAppBoxCss.frameworkLogo}
-          src="./images/node-js.svg"
+          src={props.appLogo}
           alt=""
         />
 
         <a
           target="_blank"
-          href="https://github.com/mdsomad/Social-media-backend-with-node-js"
+          href={props.googlePlayStoreLink}
           rel="noopener noreferrer"
         >
           <div className={LiveAppBoxCss.buttonContainer}>
             <img
               className={LiveAppBoxCss.buttonIcon}
-              src="./images/github2.png"
+              src="./images/google-play-store.png"
             />
             <Button className={LiveAppBoxCss.projectButtonText}>
-              Check Now
+              Install Now
             </Button>
           </div>
         </a>

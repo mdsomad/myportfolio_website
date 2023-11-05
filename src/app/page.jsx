@@ -82,7 +82,7 @@ const page = () => {
               paddingTop: "30px",
               paddingRight: "20px",
               fontSize: "20px",
-              color:"white"
+              color: "white",
             }}
           >
             I am a self taught programmer. <br /> Currently a App Developer as a

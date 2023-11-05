@@ -1,11 +1,6 @@
-import React from 'react'
- const crew = () => {
-  return (
-    <div>Crew</div>
-  )
-}
+import React from "react";
+const crew = () => {
+  return <div>Crew</div>;
+};
 
-export default crew
-
-
-
+export default crew;

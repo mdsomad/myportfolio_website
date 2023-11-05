@@ -19,12 +19,13 @@
     font-weight: 500;
 }
 
-.frameworkText{
-    font-size: 25px;
-    color: white;
+/* p{
+    font-size: 50px;
+    color: yellow;
     margin-top: 10px;
     font-weight: 400;
-}
+
+} */
 
 .sourceCodeText{
     font-size: 25px;
@@ -79,11 +80,11 @@
 
 
 .buttonIcon{
-   height: 27px;
-   width: 27px;
-   margin-top: 6px;
-   margin-right: 10px;
-   margin-left: 10px;
+    height: 27px;
+    width: 27px;
+    margin-top: 6px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .projectButtonText {
@@ -91,4 +92,13 @@
     font-weight: 600;
     align-self: center;
     color: #36454f;
-  }
+}
+
+
+.descriptionText{
+    color: greenyellow;
+}
+
+.demoText{
+    color:white;
+}
