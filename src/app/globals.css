@@ -37,6 +37,33 @@ a {
   overflow: auto;
 }
 
+
+
+
+
+/** Mobile size */
+@media (max-width: 480px) {
+  .div {
+    width: 96%;
+    height: 95vh;
+    background-color: #20242d;
+    position: absolute;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
 .mainBox {
   display: flex;
   width: 50%;

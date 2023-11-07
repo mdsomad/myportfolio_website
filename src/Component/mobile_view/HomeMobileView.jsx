@@ -1,5 +1,9 @@
 import React from "react";
 import HomeMobileViewCss from "../mobile_view/HomeMobileView.module.css";
+import { Button } from "@material-tailwind/react";
+import liveAppData from "@/models/projectData/liveAppsData";
+import { IoCall } from "react-icons/io5";
+import { MdOutlineContentCopy } from "react-icons/md";
 
 const HomeMobileView = () => {
   return (
@@ -21,6 +25,77 @@ const HomeMobileView = () => {
         I've app development experience of over 2+ Years. <br />
         And programming experience of 3 years.
       </p>
+
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          width: "100%",
+        }}
+      >
+        <a
+          target="_blank"
+          href="https://play.google.com/store/apps/dev?id=6634717439171184150"
+          rel="noopener noreferrer"
+        >
+          <img
+            className={HomeMobileViewCss.playStoreLogo}
+            src="./images/google-play-store.png"
+            alt="Google Play Store"
+          />
+        </a>
+        <h6 className={HomeMobileViewCss.liveAppText}>Live Apps</h6>
+      </div>
+
+      <div className={HomeMobileViewCss.divider}></div>
+
+      {liveAppData.map((data) => (
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "start",
+            alignItems: "center",
+            width: "100%",
+            marginBottom: "5vw",
+          }}
+        >
+          <img
+            className={HomeMobileViewCss.liveApplogo}
+            src={data.appLogo}
+            alt="App Icon"
+          />
+          <h6 className={HomeMobileViewCss.appNameText}>
+            Name : {data.appName}
+          </h6>
+          <div style={{ display: "flex", flexGrow: "1" }}></div>
+
+          <a
+            target="_blank"
+            href={data.googlePlayStoreLink}
+            rel="noopener noreferrer"
+          >
+            <Button className={HomeMobileViewCss.appInstallButton}>
+              Install Now
+            </Button>
+          </a>
+        </div>
+      ))}
+
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          width:"100%",
+          paddingLeft:"7vw",
+          marginBottom:"5vw",
+        }}
+      >
+        <IoCall className={HomeMobileViewCss.callIcon} />
+        <h6 className={HomeMobileViewCss.phoneNumberText}>91+ 8942998873</h6>
+        <MdOutlineContentCopy className={HomeMobileViewCss.copyIcon} />
+      </div>
     </div>
   );
 };
