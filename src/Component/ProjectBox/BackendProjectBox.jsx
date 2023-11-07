@@ -12,7 +12,7 @@ const BackendProjectBox = (props) => {
           Using Framework: {props.frameworkName}
         </h5>
 
-        <div style={{ display: "flex", marginTop: "15px" }}>
+        <div className={BackendProjectBoxCss.sourceCodeTextAndLinkkTextContainer} >
           <h6 className={BackendProjectBoxCss.sourceCodeText}>
             Source Code Link :
           </h6>

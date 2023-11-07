@@ -1,0 +1,50 @@
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.AvatarTag {
+  width: 70vw;
+  height: 70vw;
+  border-radius: 50%;
+  /* object-fit: cover; */
+  margin-top: 25px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 255, 255, 0.7),
+    1px 2px 4px 0px rgba(0, 255, 255, 0.7),
+    2px 8px 16px 0px rgba(0, 255, 255, 0.7),
+    2px 8px 20px 0px rgba(0, 255, 255, 0.7);
+}
+
+.h5Tag {
+  margin-top: 50px;
+  font-size: 7vw;
+  color: white;
+  font-weight: 400;
+}
+
+.nameTag {
+  font-size: 11vw;
+  color: #01eefe;
+  font-weight: 700;
+}
+.h1Tag {
+  font-size: 7vw;
+  color: white;
+  font-weight: 700;
+}
+
+.developerTag {
+  font-size: 10vw;
+  color: #01eefe;
+  font-weight: 700;
+}
+
+.descriptionTag {
+  text-align: center;
+  /* padding-top: 30px;
+  padding-right: 20px; */
+  margin: 23px;
+  font-size: 5vw;
+  color: white;
+}

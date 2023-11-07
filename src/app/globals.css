@@ -116,3 +116,23 @@ a {
 }
 
 
+.HomeDesktopView{
+  display: block;
+}
+.HomeMobileView{
+  display: none
+}
+
+/** Mobile size */
+@media (max-width: 480px) {
+  .HomeDesktopView{
+    display: none;
+  }
+  .HomeMobileView{
+    display: block
+  }
+}
+
+
+
+

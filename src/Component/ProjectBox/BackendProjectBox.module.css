@@ -23,11 +23,18 @@
   font-weight: 400;
 }
 
+.sourceCodeTextAndLinkkTextContainer {
+  display: flex;
+  margin-top: 15px;
+}
+
 .sourceCodeText {
   font-size: 25px;
   color: white;
   margin-top: 10px;
   font-weight: 400;
+  flex-wrap: nowrap;
+   white-space: nowrap;
   /* white-space: nowrap; */
 }
 
@@ -81,4 +88,109 @@
   font-weight: 600;
   align-self: center;
   color: #36454f;
+}
+
+/** Tablets size */
+@media (max-width: 900px) {
+  .container {
+    height: auto;
+    min-height: 150px;
+    width: 98%;
+    background-color: #36454f;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    padding-left: 30px;
+  }
+
+  .nameText {
+    font-size: 19px;
+    color: white;
+    margin-top: 20px;
+    font-weight: 500;
+  }
+
+  .frameworkText {
+    font-size: 15px;
+    color: white;
+    margin-top: 10px;
+    font-weight: 400;
+  }
+
+  .sourceCodeTextAndLinkkTextContainer {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 450px;
+    /* min-width: 300px; */
+    background-color: red;
+  }
+
+  .sourceCodeText {
+    font-size: 15px;
+    color: white;
+    /* margin-top: 10px; */
+    font-weight: 400;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+
+  .linkkText {
+    font-size: 14px;
+    color: #589bff;
+    margin-top: 10px;
+    font-weight: 300;
+    margin-left: 10px;
+    /* text-overflow: ellipsis; */
+    /* overflow: hidden; */
+  }
+
+  .logoContainer {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-right: 30px;
+  }
+
+  .frameworkLogo {
+    height: 70px;
+    width: 70px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+  }
+
+  .buttonContainer {
+    height: 32px;
+    width: 120px;
+    background-color: #01d7e6;
+    border-radius: 30px;
+    display: flex;
+    justify-items: center;
+    justify-content: start;
+  }
+
+  .buttonIcon {
+    height: 20px;
+    width: 20px;
+    margin-top: 6px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .projectButtonText {
+    font-size: 14px;
+    font-weight: 600;
+    align-self: center;
+    color: #36454f;
+    font-size: 10px;
+  }
+}
+
+/* style={{ display: "flex", marginTop: "15px" }} */
+
+/** Mobile size */
+@media (max-width: 480px) {
 }
