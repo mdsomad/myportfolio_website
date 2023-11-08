@@ -3,7 +3,7 @@ import HomeMobileViewCss from "../mobile_view/HomeMobileView.module.css";
 import { Button } from "@material-tailwind/react";
 import liveAppData from "@/models/projectData/liveAppsData";
 import { IoCall } from "react-icons/io5";
-import { MdOutlineContentCopy } from "react-icons/md";
+import { MdOutlineContentCopy,MdEmail } from "react-icons/md";
 
 const HomeMobileView = () => {
   return (
@@ -25,6 +25,44 @@ const HomeMobileView = () => {
         I've app development experience of over 2+ Years. <br />
         And programming experience of 3 years.
       </p>
+
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-around",
+          width: "100%",
+          marginBottom: "5vw",
+        }}
+      >
+        <a
+          target="_blank"
+          href="https://github.com/mdsomad"
+          rel="noopener noreferrer"
+        >
+          <img className={HomeMobileViewCss.socialMediaIcon} src="./images/icons8-github.svg" />
+        </a>
+        <a
+          target="_blank"
+          href="https://www.instagram.com/md_somad"
+          rel="noopener noreferrer"
+        >
+          <img className={HomeMobileViewCss.socialMediaIcon} src="./images/icons-instagram.svg"/>
+        </a>
+        <a
+          target="_blank"
+          href="https://twitter.com/MdSomad1"
+          rel="noopener noreferrer"
+        >
+          <img className={HomeMobileViewCss.socialMediaIcon} src="./images/icons-twitter.svg" />
+        </a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/md-somad-8827ab256"
+          rel="noopener noreferrer"
+        >
+          <img className={HomeMobileViewCss.socialMediaIcon} src="./images/icons-linkedin.svg" />
+        </a>
+      </div>
 
       <div
         style={{
@@ -58,6 +96,7 @@ const HomeMobileView = () => {
             alignItems: "center",
             width: "100%",
             marginBottom: "5vw",
+            paddingRight: "5vw",
           }}
         >
           <img
@@ -82,19 +121,36 @@ const HomeMobileView = () => {
         </div>
       ))}
 
+     
+
       <div
         style={{
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
-          width:"100%",
-          paddingLeft:"7vw",
-          marginBottom:"5vw",
+          width: "100%",
+          paddingLeft: "7vw",
+          marginBottom: "5vw",
         }}
       >
         <IoCall className={HomeMobileViewCss.callIcon} />
         <h6 className={HomeMobileViewCss.phoneNumberText}>91+ 8942998873</h6>
         <MdOutlineContentCopy className={HomeMobileViewCss.copyIcon} />
+      </div>
+
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          width: "100%",
+          paddingLeft: "7vw",
+          marginBottom: "7vw",
+        }}
+      >
+        <MdEmail className={HomeMobileViewCss.callIcon} />
+        <h6 className={HomeMobileViewCss.phoneNumberText}>mdsomad@gmail.com</h6>
+        <MdOutlineContentCopy className={HomeMobileViewCss.copyMailIcon} />
       </div>
     </div>
   );

@@ -49,10 +49,16 @@
 }
 
 
+.socialMediaIcon{
+  height: 12vw;
+  width: 12vw;
+}
+
+
 .playStoreLogo{
   height: 10vw;
   width: 10vw;
-  margin-left: 4vw;
+  margin-left: 7vw;
 }
 
 .liveAppText{
@@ -87,11 +93,11 @@
 .appInstallButton{
   height: 9vw;
   width: 26vw;
-  background-color: aqua;
+  background-color: #01eefe;
   border-radius: 20px;
   color: black;
   font-size: 3vw;
-  margin-right: 6vw;
+  /* margin-right: 6vw; */
   text-align: center;
 }
 
@@ -100,35 +106,25 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .callIcon{
-  color: chartreuse;
+  color: #01eefe;
   font-size: 8vw;
 }
 
 .phoneNumberText{
   color: white;
+  font-size: 4.5vw;
   margin-left: 5vw;
 }
 
 .copyIcon{
   color: white;
-  font-size: 8vw;
-  margin-left: 20vw;
+  font-size: 5vw;
+  margin-left: 18vw;
+}
+
+.copyMailIcon{
+  color: white;
+  font-size: 5vw;
+  margin-left: 8vw;
 }

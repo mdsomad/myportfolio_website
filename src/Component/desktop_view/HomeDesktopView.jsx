@@ -61,7 +61,7 @@ const HomeDesktopView = () => {
               style={{ display: "flex", width: "300px", paddingTop: "20px" }}
             >
               <img src="./images/email.png" width="35" height="28" />
-              <h4 className="phoneNumberh4Tag">mdsomad10@gmail.com</h4>
+              <h4  className="phoneNumberh4Tag">mdsomad10@gmail.com</h4>
             </div>
           </div>
         </div>
