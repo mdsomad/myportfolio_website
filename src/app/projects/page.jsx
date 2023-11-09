@@ -8,6 +8,7 @@ import frameworkProjectData from "@/models/projectData/frontendProjectData";
 import backendProjectData from "@/models/projectData/backendProjectData";
 import liveAppData from "@/models/projectData/liveAppsData";
 import LiveAppBox from "@/Component/ProjectBox/LiveAppBox";
+import FrontendProjectMobileView from "@/Component/ProjectBox/FrontendProjectMobileView";
 
 const skillTypeTabs = ["FrontendProjects", "BackendProjects", "LiveApps"];
 
@@ -79,8 +80,8 @@ const projects = () => {
       </div>
 
       <div className="mobileView">
-        {backendProjectData.map((skill) => (
-          <BackendProjectBox {...skill} />
+        {frameworkProjectData.map((skill) => (
+          <FrontendProjectMobileView {...skill} />
         ))}
       </div>
     </>
