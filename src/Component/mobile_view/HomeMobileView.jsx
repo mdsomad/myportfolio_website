@@ -148,7 +148,7 @@ const HomeMobileView = () => {
           marginBottom: "7vw",
         }}
       >
-        <MdEmail className={HomeMobileViewCss.callIcon} />
+        <MdEmail className={HomeMobileViewCss.emailIcon} />
         <h6 className={HomeMobileViewCss.phoneNumberText}>mdsomad@gmail.com</h6>
         <MdOutlineContentCopy className={HomeMobileViewCss.copyMailIcon} />
       </div>

@@ -107,7 +107,7 @@
 
 
 .callIcon{
-  color: #01eefe;
+  color: #3fff00 ;
   font-size: 8vw;
 }
 
@@ -121,6 +121,10 @@
   color: white;
   font-size: 5vw;
   margin-left: 18vw;
+}
+.emailIcon{
+  color: #00bfff;
+  font-size: 8vw;
 }
 
 .copyMailIcon{

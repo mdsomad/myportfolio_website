@@ -8,3 +8,23 @@
   flex-direction: column;
   align-items: center;
 }
+
+.mobileView{
+  display: none;
+}
+
+
+/** Mobile size */
+@media (max-width: 480px) {
+  .TabletView{
+    display: none;
+  }
+  .mobileView{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: start;
+  }
+}
+
+

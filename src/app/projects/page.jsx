@@ -12,7 +12,6 @@ import LiveAppBox from "@/Component/ProjectBox/LiveAppBox";
 const skillTypeTabs = ["FrontendProjects", "BackendProjects", "LiveApps"];
 
 const FrontEndProjects = () => {
-
   return (
     <div className="px-4 pl-10 flex flex-wrap gap-10">
       {frameworkProjectData.map((skill) => (
@@ -50,31 +49,41 @@ const skillData = {
 const projects = () => {
   const [skillType, setSkillType] = useState("FrontendProjects");
   return (
-    <div className="p-4 py-0">
-      <div className="flex w-[100%] justify-between p-4 py-10">
-        {skillTypeTabs.map((skillType_) => (
-          <button
-            className={`px-10 py-2 text-white font-bold ${
-              skillType === skillType_ &&
-              `text-[#01eefe] border-b-4 border-[#01eefe]`
-            }`}
-            onClick={() => {
-              setSkillType(skillType_);
-            }}
-          >
-            {skillType_}
-          </button>
-        ))}
-      </div>
-      {/* {
+    <>
+      <div className="TabletView">
+        <div className="p-4 py-0">
+          <div className="flex w-[100%] justify-between p-4 py-10">
+            {skillTypeTabs.map((skillType_) => (
+              <button
+                className={`px-10 py-2 text-white font-bold ${
+                  skillType === skillType_ &&
+                  `text-[#01eefe] border-b-4 border-[#01eefe]`
+                }`}
+                onClick={() => {
+                  setSkillType(skillType_);
+                }}
+              >
+                {skillType_}
+              </button>
+            ))}
+          </div>
+          {/* {
               ()=>{
                 if(setSkillType == ){
 
                 }
               }
             } */}
-      {skillData[skillType]}
-    </div>
+          {skillData[skillType]}
+        </div>
+      </div>
+
+      <div className="mobileView">
+        {backendProjectData.map((skill) => (
+          <BackendProjectBox {...skill} />
+        ))}
+      </div>
+    </>
   );
 };
 
