@@ -49,6 +49,12 @@ const skillData = {
 
 const projects = () => {
   const [skillType, setSkillType] = useState("FrontendProjects");
+
+
+  const [toggleState, setToggleState] = useState(1);
+  const toggleTab = (index) =>{
+    setToggleState(index)
+  }
   return (
     <>
       <div className="TabletView">
@@ -80,9 +86,45 @@ const projects = () => {
       </div>
 
       <div className="mobileView">
+        <div className="tabContainer">
+          <div className="tab" onClick={() => toggleTab(1)}>
+            <h6
+              className={
+                toggleState == 1 ? "activeTabText" : "notActiveTabText"
+              }
+            >
+              Frontend Projects
+            </h6>
+            <div
+              className={toggleState === 1 ? "activeTabs" : "activeNotTabs"}
+            ></div>
+          </div>
+          <div className="tab" onClick={() => toggleTab(2)}>
+            <h6
+              className={
+                toggleState == 2 ? "activeTabText" : "notActiveTabText"
+              }
+            >
+              Backend projects
+            </h6>
+            <div
+              className={toggleState === 2 ? "activeTabs" : "activeNotTabs"}
+            ></div>
+          </div>
+        </div>
+
+        <div className={toggleState == 1 ? "frontendProjectActiveTab" :"frontendProjectNotActiveTab"}>
         {frameworkProjectData.map((skill) => (
           <FrontendProjectMobileView {...skill} />
         ))}
+        </div>
+
+        <div className={toggleState == 2 ? "frontendProjectActiveTab" :"frontendProjectNotActiveTab"}>
+          {backendProjectData.map((skill) => (
+            <BackendProjectBox {...skill} />
+          ))}
+        </div>
+    
       </div>
     </>
   );

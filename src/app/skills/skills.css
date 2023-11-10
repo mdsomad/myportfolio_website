@@ -6,3 +6,87 @@
 }
 
 /* {display:"flex",flexWrap:"wrap",gap:"15px",paddingLeft:"50px",paddingTop:"10px"} */
+
+.desktopView {
+  display: block;
+}
+.mobileView {
+  display: none;
+}
+
+/** Mobile size */
+@media (max-width: 480px) {
+  .desktopView {
+    display: none;
+  }
+  .mobileView {
+    display: block;
+    /* height: 100px;
+    width: 100%;
+    background-color: red; */
+  }
+
+
+  .tabContainer {
+    display: flex;
+    width: 100%;
+    /* height: 2vw; */
+    /* justify-content: space-around; */
+    overflow: auto;
+    overflow-y: hidden;
+    align-items: center;
+    /* background-color: red; */
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+  
+  .tab {
+    display: flex;
+    /* background-color: red; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+  }
+  
+  .activeTabText {
+    color: #01d7e6;
+    font-size: 3.8vw;
+    font-weight: 600;
+  }
+  .notActiveTabText {
+    color: white;
+    font-size: 3.8vw;
+    font-weight: 600;
+  }
+  
+  .activeTabs {
+    background-color: #01d7e6;
+    width: 30vw;
+    height: 1vw;
+  }
+  .activeNotTabs {
+    background-color: #20242d;
+    width: 30vw;
+    height: 1vw;
+  }
+  
+  .frontendProjectActiveTab {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: yellowgreen; */
+    margin-top: 3vw;
+  }
+  .frontendProjectNotActiveTab {
+    height: 100%;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: yellowgreen; */
+  }
+  
+}

@@ -152,31 +152,31 @@
     margin-top: 0px;
     color: white;
   }
-  
+
   .nameTag {
     font-size: 12px;
     font-weight: 600;
     margin-top: 30px;
   }
-  
+
   .roleTag {
     font-size: 10px;
     margin-top: 5px;
     margin-bottom: 10px;
   }
-  
+
   .websiteLinkTextTag {
     font-size: 11px;
     /* margin-bottom: 30px; */
   }
-  
+
   .linkTag {
     font-size: 11px;
     margin-left: 5px;
     color: cornflowerblue;
     /* margin-bottom: 0px; */
   }
-  
+
   .visitButton {
     background-color: #01d7e6;
     width: 80px;
@@ -188,4 +188,109 @@
     justify-content: center;
     margin-right: 10px;
   }
+}
+
+.bloc-tabs {
+  display: flex;
+  position: relative;
+}
+
+.tabs:not(:last-child) {
+  border-right: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.active-tabs {
+  background: green;
+  border-bottom: 1px solid transparent;
+}
+
+.active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% +2px);
+  height: 5px;
+  background: rgb(88, 147, 241);
+}
+
+.button {
+  border: none;
+}
+
+.content-tabs {
+  flex-grow: 1;
+}
+
+.content {
+  background: white;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.content h2 {
+  padding: 0px 0 5px 0px;
+}
+
+.content hr {
+  width: 100px;
+  height: 2px;
+  background: #222;
+  margin-bottom: 5px;
+}
+
+.content p {
+  width: 100%;
+  height: 100%;
+}
+
+.active-content {
+  display: block;
+}
+
+.tabContainer {
+  display: flex;
+  width: 100%;
+  /* height: 2vw; */
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.tab {
+  display: flex;
+  /* width: 100%; */
+  /* background-color: red; */
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  gap: 1vw;
+}
+
+
+.activeTabText{
+  color: #01d7e6;
+  font-size: 3.8vw;
+  font-weight: 500;
+}
+.notActiveTabText{
+  color: white;
+  font-size: 3.8vw;
+  font-weight: 500;
+}
+
+
+.activeTabs {
+  background-color: #01d7e6;
+  width: 38vw;
+  height: 1vw;
+}
+.activeNotTabs {
+  background-color: #20242d;
+  width: 38vw;
+  height: 1vw;
 }

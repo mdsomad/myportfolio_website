@@ -1,0 +1,25 @@
+.mainCon{
+    /* height: 500px; */
+    width: 100%;
+    /* background-color: red; */
+    display: grid;
+    /* grid-template-rows: 50vw ; */
+    grid-template-rows:repeat(4,23vw) ;
+    grid-template-columns: repeat(2,1fr);
+    gap: 4vw;
+}
+
+.skillItem{
+    background-color: #1b1b1b;
+    border-top-left-radius: 3vw;
+    border-bottom-right-radius: 3vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.imagTag{
+    height: 9vw;
+    margin-left: 2vw;
+    /* width: vw; */
+}
