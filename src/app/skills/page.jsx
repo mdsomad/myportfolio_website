@@ -23,10 +23,29 @@ const skillData = {
 
 // import ProgressBar from "./ProgressBarLabels.module.css"
 
+const skillTypeTabsData = [
+  "Languages",
+  "Frameworks",
+  "Backend",
+  "Design",
+  "Extra",
+];
+const comTabsData = [
+  <SkillsMobileView skillsData={languagesData}/>,
+  <SkillsMobileView skillsData={languagesData}/>,
+  <SkillsMobileView skillsData={languagesData}/>,
+  <SkillsMobileView skillsData={languagesData}/>,
+  <SkillsMobileView skillsData={languagesData}/>,
+  // "Frameworks",
+  // "Backend",
+  // "Design",
+  // "Extra",
+];
+
 const skills = () => {
   const [skillType, setSkillType] = useState("Language");
 
-  const [toggleState, setToggleState] = useState(1);
+  const [toggleState, setToggleState] = useState(0);
   const toggleTab = (index) => {
     setToggleState(index);
   };
@@ -60,69 +79,37 @@ const skills = () => {
         </div>
       </div>
 
-      {/* Mobile size  */}
-      <div className="mobileView">
+
+       {/* tableteView size  */}
+       <div className="tableteView">
         <div className="tabContainer">
-          <div className="tab" onClick={() => toggleTab(1)}>
-            <h6
-              className={
-                toggleState == 1 ? "activeTabText" : "notActiveTabText"
-              }
-            >
-              Languages
-            </h6>
-            <div
-              className={toggleState === 1 ? "activeTabs" : "activeNotTabs"}
-            ></div>
-          </div>
-          <div className="tab" onClick={() => toggleTab(2)}>
-            <h6
-              className={
-                toggleState == 2 ? "activeTabText" : "notActiveTabText"
-              }
-            >
-              Frameworks
-            </h6>
-            <div
-              className={toggleState === 2 ? "activeTabs" : "activeNotTabs"}
-            ></div>
-          </div>
-          <div className="tab" onClick={() => toggleTab(3)}>
-            <h6
-              className={
-                toggleState == 3 ? "activeTabText" : "notActiveTabText"
-              }
-            >
-              Backend
-            </h6>
-            <div
-              className={toggleState === 3 ? "activeTabs" : "activeNotTabs"}
-            ></div>
-          </div>
-          <div className="tab" onClick={() => toggleTab(4)}>
-            <h6
-              className={
-                toggleState == 4 ? "activeTabText" : "notActiveTabText"
-              }
-            >
-              Design
-            </h6>
-            <div
-              className={toggleState === 4 ? "activeTabs" : "activeNotTabs"}
-            ></div>
-          </div>
-          <div className="tab" onClick={() => toggleTab(5)}>
-            <h6
-              className={
-                toggleState == 5 ? "activeTabText" : "notActiveTabText"
-              }
-            >
-              Extra
-            </h6>
-            <div
-              className={toggleState === 5 ? "activeTabs" : "activeNotTabs"}
-            ></div>
-          </div>
+          {skillTypeTabsData.map((tabViewType, index) => (
+            <div className="tab" onClick={() => toggleTab(index)}>
+              <h6
+                className={
+                  toggleState == index ? "activeTabText" : "notActiveTabText"
+                }
+              >
+                {tabViewType}
+              </h6>
+              <div
+                className={
+                  toggleState === index ? "activeTabs" : "activeNotTabs"
+                }
+              ></div>
+            </div>
+          ))}
+        </div>
+        {/* body */}
+        <div
+          className={
+            toggleState == 0
+              ? "frontendProjectActiveTab"
+              : "frontendProjectNotActiveTab"
+          }
+        >
+          <SkillsMobileView skillsData={languagesData} />
+         
         </div>
 
         <div
@@ -132,12 +119,8 @@ const skills = () => {
               : "frontendProjectNotActiveTab"
           }
         >
-          <SkillsMobileView />
-          {/* {frameworkProjectData.map((skill) => (
-            <FrontendProjectMobileView {...skill} />
-          ))} */}
+          <SkillsMobileView skillsData={frameworksData} />
         </div>
-
         <div
           className={
             toggleState == 2
@@ -145,10 +128,7 @@ const skills = () => {
               : "frontendProjectNotActiveTab"
           }
         >
-          <h1>Tab 2</h1>
-          {/* {backendProjectData.map((skill) => (
-            <BackendProjectBox {...skill} />
-          ))} */}
+         <SkillsMobileView skillsData={backendData} />
         </div>
         <div
           className={
@@ -157,10 +137,7 @@ const skills = () => {
               : "frontendProjectNotActiveTab"
           }
         >
-          <h1>Tab 3</h1>
-          {/* {backendProjectData.map((skill) => (
-            <BackendProjectBox {...skill} />
-          ))} */}
+          <SkillsMobileView skillsData={designData} />
         </div>
         <div
           className={
@@ -169,22 +146,77 @@ const skills = () => {
               : "frontendProjectNotActiveTab"
           }
         >
-          <h1>Tab 4</h1>
-          {/* {backendProjectData.map((skill) => (
-            <BackendProjectBox {...skill} />
-          ))} */}
+          <SkillsMobileView skillsData={extraData} />
         </div>
+      </div>
+
+      {/* Mobile size  */}
+      <div className="mobileView">
+        <div className="tabContainer">
+          {skillTypeTabsData.map((tabViewType, index) => (
+            <div className="tab" onClick={() => toggleTab(index)}>
+              <h6
+                className={
+                  toggleState == index ? "activeTabText" : "notActiveTabText"
+                }
+              >
+                {tabViewType}
+              </h6>
+              <div
+                className={
+                  toggleState === index ? "activeTabs" : "activeNotTabs"
+                }
+              ></div>
+            </div>
+          ))}
+        </div>
+        {/* body */}
         <div
           className={
-            toggleState == 5
+            toggleState == 0
               ? "frontendProjectActiveTab"
               : "frontendProjectNotActiveTab"
           }
         >
-          <h1>Tab 5</h1>
-          {/* {backendProjectData.map((skill) => (
-            <BackendProjectBox {...skill} />
-          ))} */}
+          <SkillsMobileView skillsData={languagesData} />
+         
+        </div>
+
+        <div
+          className={
+            toggleState == 1
+              ? "frontendProjectActiveTab"
+              : "frontendProjectNotActiveTab"
+          }
+        >
+          <SkillsMobileView skillsData={frameworksData} />
+        </div>
+        <div
+          className={
+            toggleState == 2
+              ? "frontendProjectActiveTab"
+              : "frontendProjectNotActiveTab"
+          }
+        >
+         <SkillsMobileView skillsData={backendData} />
+        </div>
+        <div
+          className={
+            toggleState == 3
+              ? "frontendProjectActiveTab"
+              : "frontendProjectNotActiveTab"
+          }
+        >
+          <SkillsMobileView skillsData={designData} />
+        </div>
+        <div
+          className={
+            toggleState == 4
+              ? "frontendProjectActiveTab"
+              : "frontendProjectNotActiveTab"
+          }
+        >
+          <SkillsMobileView skillsData={extraData} />
         </div>
       </div>
     </>

@@ -57,7 +57,7 @@ const projects = () => {
   }
   return (
     <>
-      <div className="TabletView">
+      <div className="desktopView">
         <div className="p-4 py-0">
           <div className="flex w-[100%] justify-between p-4 py-10">
             {skillTypeTabs.map((skillType_) => (
@@ -84,7 +84,7 @@ const projects = () => {
           {skillData[skillType]}
         </div>
       </div>
-
+      {/* MobileView Code */}
       <div className="mobileView">
         <div className="tabContainer">
           <div className="tab" onClick={() => toggleTab(1)}>

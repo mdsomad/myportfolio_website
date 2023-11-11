@@ -1,25 +1,98 @@
-.mainCon{
+.mainCon {
+  /* height: 500px; */
+  width: 100%;
+  /* background-color: red; */
+  display: grid;
+  /* grid-template-rows: 50vw ; */
+  grid-template-rows: repeat(4, 20vw);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3vw;
+}
+
+.skillItem {
+  background-color: #1b1b1b;
+  border-top-left-radius: 4vw;
+  border-bottom-right-radius: 4vw;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.imagTag {
+  height: 9vw;
+  margin-left: 2vw;
+  /* width: vw; */
+}
+
+.nameProgressParentDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  padding-left: 2vw;
+  padding-top: 1.5vw;
+}
+
+.nameText {
+  color: white;
+  font-size: 3.6vw;
+  font-weight: 600;
+}
+
+.percentageNumberText {
+    margin-top:4.5vw;
+    margin-left: 1.5vw;
+    color:white;
+    font-size: 3.3vw;
+    font-weight: 500;
+}
+
+/** tableteView size */
+@media ((min-width: 481px) and (max-width: 850px)) {
+  .mainCon {
     /* height: 500px; */
     width: 100%;
     /* background-color: red; */
     display: grid;
     /* grid-template-rows: 50vw ; */
-    grid-template-rows:repeat(4,23vw) ;
-    grid-template-columns: repeat(2,1fr);
-    gap: 4vw;
-}
+    grid-template-rows: repeat(3, 14vw);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+  }
 
-.skillItem{
+  .skillItem {
     background-color: #1b1b1b;
-    border-top-left-radius: 3vw;
-    border-bottom-right-radius: 3vw;
+    border-top-left-radius: 4vw;
+    border-bottom-right-radius: 4vw;
     display: flex;
     justify-content: start;
     align-items: center;
-}
+  }
 
-.imagTag{
-    height: 9vw;
-    margin-left: 2vw;
+  .imagTag {
+    height: 5vw;
+    margin-left: 3vw;
     /* width: vw; */
+  }
+
+  .nameProgressParentDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding-left: 1vw;
+    padding-bottom: 2vw;
+  }
+  
+  .nameText {
+    color: white;
+    font-size: 2vw;
+    font-weight: 600;
+  }
+  
+  .percentageNumberText {
+      margin-top:3.5vw;
+      margin-left: 1.5vw;
+      color:white;
+      font-size: 2vw;
+      font-weight: 500;
+  }
 }

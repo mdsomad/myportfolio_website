@@ -13,18 +13,8 @@
   display: none;
 }
 
-/** Mobile size */
-@media (max-width: 480px) {
-  .TabletView {
-    display: none;
-  }
-  .mobileView {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: start;
-  }
-}
+
+
 
 /** TabBar Style Code */
 
@@ -85,3 +75,97 @@
   align-items: center;
   /* background-color: yellowgreen; */
 }
+
+
+
+
+
+/** Mobile size */
+@media (max-width: 480px) {
+  .desktopView {
+    display: none;
+  }
+  .mobileView {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: start;
+  }
+  
+}
+
+
+/** Tablete size */
+@media ((min-width: 481px) and (max-width: 850px)) {
+
+  .desktopView {
+    display: none;
+  }
+  .mobileView {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: start;
+  }
+
+  .tabContainer {
+    display: flex;
+    width: 100%;
+    /* height: 2vw; */
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: red; */
+    margin-top: 2vw;
+  }
+  
+  .tab {
+    display: flex;
+    /* background-color: red; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+  }
+  
+  .activeTabText {
+    color: #01d7e6;
+    font-size: 3vw;
+    font-weight: 600;
+  }
+  .notActiveTabText {
+    color: white;
+    font-size: 3vw;
+    font-weight: 600;
+  }
+  
+  .activeTabs {
+    background-color: #01d7e6;
+    width: 38vw;
+    height: 0.6vw;
+  }
+  .activeNotTabs {
+    background-color: #20242d;
+    width: 38vw;
+    height: 0.6vw;
+  }
+  
+  .frontendProjectActiveTab {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: yellowgreen; */
+    margin-top: 3vw;
+  }
+  .frontendProjectNotActiveTab {
+    height: 100%;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: yellowgreen; */
+  }
+  
+}
+

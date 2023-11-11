@@ -1,16 +1,17 @@
-import React from 'react'
+import React from 'react';
+import HomeDesktopViewCss from "./HomeDesktopView.module.css"
 
 const HomeDesktopView = () => {
   return (
     <div style={{ display: "flex" }}>
-      <div className="mainBox">
-        <div className="mainBox2">
-          <h5 className="h5">Hello, It’s Me</h5>
-          <h1 className="h1">Md Somad</h1>
+      <div className={HomeDesktopViewCss.mainBox}>
+        <div className={HomeDesktopViewCss.mainBox2}>
+          <h5 className={HomeDesktopViewCss.h5}>Hello, It’s Me</h5>
+          <h1 className={HomeDesktopViewCss.h1}>Md Somad</h1>
 
           <div style={{ display: "flex" }}>
-            <h1 className="h1">And I’m an</h1>
-            <h1 className="texrow">App Developer</h1>
+            <h1 className={HomeDesktopViewCss.h1}>And I’m an</h1>
+            <h1 className={HomeDesktopViewCss.texrow}>App Developer</h1>
           </div>
 
           <div
@@ -55,22 +56,22 @@ const HomeDesktopView = () => {
               style={{ display: "flex", width: "300px", paddingTop: "20px" }}
             >
               <img src="./images/call.png" width="28" height="28" />
-              <h4 className="phoneNumberh4Tag">91+ 8942998873</h4>
+              <h4 className={HomeDesktopViewCss.phoneNumberh4Tag}>91+ 8942998873</h4>
             </div>
             <div
               style={{ display: "flex", width: "300px", paddingTop: "20px" }}
             >
               <img src="./images/email.png" width="35" height="28" />
-              <h4  className="phoneNumberh4Tag">mdsomad10@gmail.com</h4>
+              <h4  className={HomeDesktopViewCss.phoneNumberh4Tag}>mdsomad10@gmail.com</h4>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="mainAvatarDiv">
-        <div className="colDiv">
-          <div className="AvatarDiv">
-            <img src="./images/profile-image.jpg" />
+      <div className={HomeDesktopViewCss.mainAvatarDiv}>
+        <div className={HomeDesktopViewCss.colDiv}>
+          <div className={HomeDesktopViewCss.AvatarDiv}>
+            <img className={HomeDesktopViewCss.imageTag} src="./images/profile-image.jpg" />
           </div>
 
           <p

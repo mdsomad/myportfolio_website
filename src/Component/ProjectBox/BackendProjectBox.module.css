@@ -117,7 +117,7 @@ width: 60vw;
 
 
 /** Tablets size */
-@media (max-width: 900px) {
+@media (max-width: 480px) {
 
 
 
@@ -224,6 +224,103 @@ width: 60vw;
 
 
 
+@media ((min-width: 481px) and (max-width: 900px)) {
+  .mainContainer{
+    height: auto;
+    min-height: 20vw;
+    width: 95%;
+    border-radius: 2vw;
+    background-color: #36454f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4vw;
+  }
+
+  .textContainer{
+    height: 100%; 
+    padding-left: 3vw;
+    /* width: 100px; */
+    /* background-color: greenyellow; */
+  }
+
+ .sourceCodeLinkDiv{
+  width: 60vw;
+ }
+  .nameText {
+    font-size: 3vw;
+    color: white;
+    margin-top: 3vw;
+    font-weight: 500;
+  }
+  
+
+  .frameworkText {
+    font-size: 2vw;
+    color: white;
+    margin-top: 1vw;
+    font-weight: 400;
+  }
+
+  .sourceCodeText {
+    font-size: 2vw;
+    color: white;
+    margin-top: 2vw;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /* flex-wrap: nowrap; */
+    /* white-space: nowrap; */
+     white-space: nowrap; 
+  }
+
+
+  .logoAndButtonContainer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    /* margin-bottom: 2vw; */
+    /* background-color: green; */
+    
+  }
+
+  .frameworkLogo {
+    height: 9vw;
+    width: 9vw;
+    margin-right: 4vw;
+  }
+
+  
+  .buttonContainer {
+    height: 4vw;
+    width: 14vw;
+    background-color: #01d7e6;
+    border-radius: 4vw;
+    display: flex;
+    justify-items: center;
+    justify-content: start;
+    margin-right: 3vw;
+  }
+
+
+  .buttonIcon {
+    height: 2.5vw;
+    width: 2.5vw;
+    margin-top: 0.7vw;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .button {
+    font-size: 0.6rem;
+    font-weight: 600;
+    align-self: center;
+    color: #36454f;
+  }
+  
+}
 
 
 

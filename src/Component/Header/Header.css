@@ -54,7 +54,7 @@
     margin-top: 0px;
   }
   .HeaderMobile{
-    height: 50px;
+    height: 16vw;
     width: 100%;
     background-color: #20242d;
     justify-content: space-between;
@@ -62,7 +62,5 @@
     align-items: center;
     display: flex;
     position: sticky;
-    top: 0px;
-    margin-top: 0px;
   }
 }

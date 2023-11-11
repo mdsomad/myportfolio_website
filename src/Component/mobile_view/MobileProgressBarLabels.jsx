@@ -8,8 +8,8 @@ const MobileProgressBarLabels = ({ Progress }) => {
         //  className={ProgressBar.MobileProgressBarLabelsColor}
         style={{
           height: "100%",
-        //   width: `${Progress}%`,
-          width: `80%`,
+          width: `${Progress}%`,
+          // width: `80%`,
           borderRadius: "3vw",
           backgroundColor: "#01EEFE",
         }}

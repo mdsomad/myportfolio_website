@@ -30,15 +30,17 @@ const Header = () => {
           <Link href="/crew">{<Button name={"Crew"} />}</Link>
         </div>
       </div>
-
+      {/* HeaderMobile Code*/}
       <div className="HeaderMobile">
-        <RxHamburgerMenu className="sm:hidden text-[26px] bg-red-700" />
+        <RxHamburgerMenu
+          style={{ color: "white", marginLeft: "6vw", fontSize: "5vw" }}
+        />
         <div className="gap:1"></div>
 
         <h4
           style={{
             color: "#01EEFE",
-            paddingRight: "10px",
+            paddingRight: "3vw",
             fontSize: "5vw",
             fontWeight: "bold",
           }}
