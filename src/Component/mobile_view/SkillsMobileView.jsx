@@ -16,34 +16,11 @@ const SkillsMobileView = ({ skillsData }) => {
                 alt=""
               />
             </a>
-            <div
-            className={SkillsMobileViewCss.nameProgressParentDiv}
-              // style={{
-              //   display: "flex",
-              //   flexDirection: "column",
-              //   gap: "1vw",
-              //   paddingLeft: "2vw",
-              //   paddingBottom: "1.5vw",
-              // }}
-            >
-              
-              <h6
-               className={SkillsMobileViewCss.nameText}
-                // style={{ color: "white", fontSize: "3.6vw", fontWeight: "600" }}
-              >
-                {skill.name}
-              </h6>
+            <div className={SkillsMobileViewCss.nameProgressParentDiv}>
+              <h6 className={SkillsMobileViewCss.nameText}>{skill.name}</h6>
               <MobileProgressBarLabels Progress={skill.Progress} />
             </div>
-            <h6 className={SkillsMobileViewCss.percentageNumberText}
-              // style={{
-              //   marginTop: "4.5vw",
-              //   marginLeft: "1.5vw",
-              //   color: "white",
-              //   fontSize: "3.3vw",
-              //   fontWeight: "500",
-              // }}
-            >
+            <h6 className={SkillsMobileViewCss.percentageNumberText}>
               {skill.percentageNumber}
             </h6>
           </div>

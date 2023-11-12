@@ -20,7 +20,7 @@
 
 .imagTag {
   height: 9vw;
-  margin-left: 2vw;
+  margin-left: 4vw;
   /* width: vw; */
 }
 
@@ -34,12 +34,12 @@
 
 .nameText {
   color: white;
-  font-size: 3.6vw;
+  font-size: 3vw;
   font-weight: 600;
 }
 
 .percentageNumberText {
-    margin-top:4.5vw;
+    margin-top:7vw;
     margin-left: 1.5vw;
     color:white;
     font-size: 3.3vw;

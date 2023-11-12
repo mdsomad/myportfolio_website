@@ -101,6 +101,7 @@
   .desktopView {
     display: none;
   }
+  
   .mobileView {
     display: flex;
     flex-direction: column;

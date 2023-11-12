@@ -84,6 +84,7 @@ const projects = () => {
           {skillData[skillType]}
         </div>
       </div>
+      
       {/* MobileView Code */}
       <div className="mobileView">
         <div className="tabContainer">
@@ -115,13 +116,13 @@ const projects = () => {
 
         <div className={toggleState == 1 ? "frontendProjectActiveTab" :"frontendProjectNotActiveTab"}>
         {frameworkProjectData.map((skill) => (
-          <FrontendProjectMobileView {...skill} />
+          <FrontendProjectMobileView {...skill}/>
         ))}
         </div>
 
         <div className={toggleState == 2 ? "frontendProjectActiveTab" :"frontendProjectNotActiveTab"}>
           {backendProjectData.map((skill) => (
-            <BackendProjectBox {...skill} />
+            <BackendProjectBox {...skill}/>
           ))}
         </div>
     

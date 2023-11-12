@@ -19,19 +19,21 @@
 }
 
 /** tableteView size */
-@media (max-width: 850px) {
+/* @media (max-width: 850px) { */
+ @media ((min-width: 481px) and (max-width: 850px)) { 
   .desktopView {
     display: none;
   }
   .mobileView {
-    display: none;
+    display: block;
     /* height: 100px;
     width: 100%;
     background-color: red; */
   }
 
   .tableteView{
-    display: block;
+    display: none;
+  
   }
 
 
@@ -60,24 +62,25 @@
   
   .activeTabText {
     color: #01d7e6;
-    font-size: 3vw;
+    /* color: pink; */
+    font-size: 2.5vw;
     font-weight: 600;
   }
   .notActiveTabText {
     color: white;
-    font-size: 3vw;
+    font-size: 2.5vw;
     font-weight: 600;
   }
   
   .activeTabs {
     background-color: #01d7e6;
-    width: 30vw;
-    height: 0.6vw;
+    width: 20vw;
+    height: 0.4vw;
   }
   .activeNotTabs {
     background-color: #20242d;
-    width: 30vw;
-    height: 0.6vw;
+    width: 20vw;
+    height: 0.4vw;
   }
   
   .frontendProjectActiveTab {
@@ -86,7 +89,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: yellowgreen; */
+    /* background-color: yellowgreen;*/
     margin-top: 4vw;
     padding-left: 2vw;
     padding-right: 2vw;
@@ -127,7 +130,7 @@
     overflow: auto;
     overflow-y: hidden;
     align-items: center;
-    /* background-color: red; */
+    /* background-color: yellow; */
     padding-left: 3vw;
     padding-right: 3vw;
   }
