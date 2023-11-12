@@ -1,6 +1,5 @@
 import "../Header/Header.css";
 import Link from "next/link";
-
 import React from "react";
 import Button from "./Button";
 import { RxHamburgerMenu } from "react-icons/rx";

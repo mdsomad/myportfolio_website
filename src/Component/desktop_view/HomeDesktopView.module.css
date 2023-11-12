@@ -1,77 +1,166 @@
 .mainBox {
-    display: flex;
-    width: 50%;
-    /* background-color: blue; */
-    padding-top: 180px;
-    padding-left: 150px;
-  }
-  
-  .mainBox2 {
-    width: 100%;
-    /* background-color: gray; */
-  }
-  
-  .h5 {
-    font-size: 30px;
-    font-weight: 500;
-    color: white;
-  }
-  
-  .h1 {
-    padding-top: 10px;
-    font-size: 50px;
-    font-weight: 500;
-    color: white;
-  }
-  .texrow {
-    padding-top: 10px;
-    padding-left: 20px;
-    font-size: 50px;
-    font-weight: 500;
-    color: #01eefe;
-  }
-  
-  .phoneNumberh4Tag {
-    font-size: 20px;
-    padding-left: 15px;
-    padding-top: 5px;
-    font-weight: 700;
-    color: white;
-  }
-  
-  .mainAvatarDiv {
-    /* background-color: red; */
-    width: 50%;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-  }
-  
-  .colDiv {
-    display: column;
-    justify-content: center;
-    align-items: center;
-    margin-right: 100px;
-    margin-top: 100px;
-  }
-  
-  .AvatarDiv {
-    position: relative;
-    height: 35vh;
-    width: 35vh;
-    background-color: #01eefe;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-top: 50px;
-    margin-left: 70px;
-  
-    box-shadow: 0px 1px 2px 0px rgba(0, 255, 255, 0.7),
-      1px 2px 4px 0px rgba(0, 255, 255, 0.7),
-      2px 8px 16px 0px rgba(0, 255, 255, 0.7),
-      2px 8px 20px 0px rgba(0, 255, 255, 0.7);
-  }
-  .imageTag {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+  display: flex;
+  width: 50%;
+  /* background-color: blue; */
+  padding-top: 180px;
+  padding-left: 150px;
+}
+
+.mainBox2 {
+  width: 100%;
+  /* background-color: gray; */
+}
+
+.h5 {
+  font-size: 1.5vw;
+  font-weight: 500;
+  color: white;
+}
+
+.h1 {
+  padding-top: 0.3vw;
+  font-size: 3vw;
+  font-weight: 500;
+  color: white;
+}
+.texrow {
+  padding-top: 1vw;
+  padding-left: 0vw;
+  font-size: 3vw;
+  font-weight: 500;
+  color: #01eefe;
+}
+
+.phoneNumberh4Tag {
+  font-size: 1vw;
+  padding-left: 1vw;
+  padding-top: 0.3vw;
+  font-weight: 700;
+  color: white;
+}
+
+.mainAvatarDiv {
+  /* background-color: red; */
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.colDiv {
+  display: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+  margin-top: 100px;
+}
+
+.AvatarDiv {
+  position: relative;
+  height: 35vh;
+  width: 35vh;
+  background-color: #01eefe;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 50px;
+  margin-left: 70px;
+
+  box-shadow: 0px 1px 2px 0px rgba(0, 255, 255, 0.7),
+    1px 2px 4px 0px rgba(0, 255, 255, 0.7),
+    2px 8px 16px 0px rgba(0, 255, 255, 0.7),
+    2px 8px 20px 0px rgba(0, 255, 255, 0.7);
+}
+
+
+/* new  code */
+.mainContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  /* background-color: red; */
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  /* height: 40vw; */
+  /* background-color: gray; */
+  padding-top: 10vw;
+  padding-left: 5vw;
+}
+
+.text1 {
+  font-size: 1.8vw;
+  font-weight: 500;
+  color: white;
+}
+.text2 {
+  padding-top: 0.2vw;
+  font-size: 3.3vw;
+  font-weight: 500;
+  color: white;
+}
+.text3 {
+  font-size: 2.8vw;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 0.5vw;
+}
+
+.contactDetailsContainer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  gap: 1vw;
+  margin-top: 0.8vw;
+}
+
+.callIcon {
+  color: #3fff00;
+  font-size: 2vw;
+}
+
+.phoneNumberText {
+  color: white;
+  font-size: 1.5vw;
+  font-weight: 500;
+  /* margin-left: 5vw; */
+}
+
+.copyIcon {
+  color: white;
+  font-size: 5vw;
+  margin-left: 18vw;
+}
+.emailIcon {
+  color: #00bfff;
+  font-size: 2vw;
+}
+
+.copyMailIcon {
+  color: white;
+  font-size: 5vw;
+  margin-left: 8vw;
+}
+
+.AvatarContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+.AvatarTag {
+  width: 20vw;
+  height: 20vw;
+  object-fit: cover;
+  border-radius: 50%;
+  /* object-fit: cover; */
+  margin-top: 7vw;
+  box-shadow: 0px 1px 2px 0px rgba(0, 255, 255, 0.7),
+    1px 2px 4px 0px rgba(0, 255, 255, 0.7),
+    2px 8px 16px 0px rgba(0, 255, 255, 0.7),
+    2px 8px 20px 0px rgba(0, 255, 255, 0.7);
+}

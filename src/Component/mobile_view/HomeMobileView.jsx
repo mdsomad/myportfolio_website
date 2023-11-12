@@ -3,7 +3,8 @@ import HomeMobileViewCss from "../mobile_view/HomeMobileView.module.css";
 import { Button } from "@material-tailwind/react";
 import liveAppData from "@/models/projectData/liveAppsData";
 import { IoCall } from "react-icons/io5";
-import { MdOutlineContentCopy,MdEmail } from "react-icons/md";
+import { MdOutlineContentCopy, MdEmail } from "react-icons/md";
+import { TypeAnimation } from "react-type-animation";
 
 const HomeMobileView = () => {
   return (
@@ -17,7 +18,22 @@ const HomeMobileView = () => {
       <h5 className={HomeMobileViewCss.h5Tag}>Hello, It’s Me</h5>
       <h1 className={HomeMobileViewCss.nameTag}>Md Somad</h1>
       <h1 className={HomeMobileViewCss.h1Tag}>And I’m an</h1>
-      <h1 className={HomeMobileViewCss.developerTag}>App Developer</h1>
+      <h1 className={HomeMobileViewCss.developerTag}>
+        {" "}
+        <TypeAnimation
+          sequence={[
+            // Same substring at the start will only be typed out once, initially
+            "App Developer",
+            1000, // wait 1s before replacing "Mice" with "Hamsters"
+            "Web Developer",
+            1000,
+          ]}
+          wrapper="span"
+          speed={50}
+          style={{ fontSize: "2em", display: "inline-block" }}
+          repeat={Infinity}
+        />
+      </h1>
 
       <p className={HomeMobileViewCss.descriptionTag}>
         I am a self taught programmer. <br /> Currently a App Developer as a
@@ -39,28 +55,40 @@ const HomeMobileView = () => {
           href="https://github.com/mdsomad"
           rel="noopener noreferrer"
         >
-          <img className={HomeMobileViewCss.socialMediaIcon} src="./images/icons8-github.svg" />
+          <img
+            className={HomeMobileViewCss.socialMediaIcon}
+            src="./images/icons8-github.svg"
+          />
         </a>
         <a
           target="_blank"
           href="https://www.instagram.com/md_somad"
           rel="noopener noreferrer"
         >
-          <img className={HomeMobileViewCss.socialMediaIcon} src="./images/icons-instagram.svg"/>
+          <img
+            className={HomeMobileViewCss.socialMediaIcon}
+            src="./images/icons-instagram.svg"
+          />
         </a>
         <a
           target="_blank"
           href="https://twitter.com/MdSomad1"
           rel="noopener noreferrer"
         >
-          <img className={HomeMobileViewCss.socialMediaIcon} src="./images/icons-twitter.svg" />
+          <img
+            className={HomeMobileViewCss.socialMediaIcon}
+            src="./images/icons-twitter.svg"
+          />
         </a>
         <a
           target="_blank"
           href="https://www.linkedin.com/in/md-somad-8827ab256"
           rel="noopener noreferrer"
         >
-          <img className={HomeMobileViewCss.socialMediaIcon} src="./images/icons-linkedin.svg" />
+          <img
+            className={HomeMobileViewCss.socialMediaIcon}
+            src="./images/icons-linkedin.svg"
+          />
         </a>
       </div>
 
@@ -120,8 +148,6 @@ const HomeMobileView = () => {
           </a>
         </div>
       ))}
-
-     
 
       <div
         style={{

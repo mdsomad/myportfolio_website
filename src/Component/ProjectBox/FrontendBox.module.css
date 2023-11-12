@@ -31,18 +31,10 @@
   overflow-y: hidden;
 }
 
-.screenshotsbox {
-  height: 100%;
-  width: 280px;
-  /* background-color: purple; */
-  margin-right: 20px;
-  /* display: inline-block; */
-}
-
-.img {
+.imgTag {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+ margin-right: 1vw;
 }
 
 .h3 {

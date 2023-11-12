@@ -41,6 +41,7 @@ a {
 
 .HomeDesktopView {
   display: block;
+  /* height: 90%; */
 }
 .HomeMobileView {
   display: none;

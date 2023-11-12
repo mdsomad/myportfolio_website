@@ -6,11 +6,7 @@ const FrontendBox = (props) => {
     <div className={FrontendBoxCss.containerdiv}>
       <div className={FrontendBoxCss.containerscreenshots}>
         {props.screenshots.map((data, index) => {
-          return (
-            <div className={FrontendBoxCss.screenshotsbox}>
-              <img className={FrontendBoxCss.img} src={data} />
-            </div>
-          );
+          return <img className={FrontendBoxCss.imgTag} src={data} />;
         })}
       </div>
 
