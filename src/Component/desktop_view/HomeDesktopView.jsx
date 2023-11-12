@@ -3,7 +3,6 @@ import React from "react";
 import HomeDesktopViewCss from "./HomeDesktopView.module.css";
 import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
-import { propTypesAnimation } from "@material-tailwind/react/types/generic";
 import { TypeAnimation } from "react-type-animation";
 
 const HomeDesktopView = () => {
@@ -114,95 +113,6 @@ const HomeDesktopView = () => {
         </p>
       </div>
     </div>
-
-    // <div style={{ display: "flex" }}>
-    //   <div className={HomeDesktopViewCss.mainBox}>
-    //     <div className={HomeDesktopViewCss.mainBox2}>
-    //       <h5 className={HomeDesktopViewCss.h5}>Hello, It’s Me</h5>
-    //       <h1 className={HomeDesktopViewCss.h1}>Md Somad</h1>
-
-    //       <div style={{ display: "flex" }}>
-    //         <h1 className={HomeDesktopViewCss.h1}>And I’m an <span style={{color:"#01eefe"}}>App Developer</span></h1>
-    //       </div>
-
-    //       <div
-    //         style={{
-    //           display: "flex",
-    //           justifyContent: "space-between",
-    //           width: "300px",
-    //         }}
-    //       >
-    //         <a
-    //           target="_blank"
-    //           href="https://github.com/mdsomad"
-    //           rel="noopener noreferrer"
-    //         >
-    //           <img src="./images/icons8-github.svg" width="50vw" height="50vw" />
-    //         </a>
-    //         <a
-    //           target="_blank"
-    //           href="https://www.instagram.com/md_somad"
-    //           rel="noopener noreferrer"
-    //         >
-    //           <img src="./images/icons-instagram.svg" width="50vw" height="50vw" />
-    //         </a>
-    //         <a
-    //           target="_blank"
-    //           href="https://twitter.com/MdSomad1"
-    //           rel="noopener noreferrer"
-    //         >
-    //           <img src="./images/icons-twitter.svg" width="50vw" height="50vw" />
-    //         </a>
-    //         <a
-    //           target="_blank"
-    //           href="https://www.linkedin.com/in/md-somad-8827ab256"
-    //           rel="noopener noreferrer"
-    //         >
-    //           <img src="./images/icons-linkedin.svg" width="50vw" height="50vw" />
-    //         </a>
-    //       </div>
-
-    //       <div>
-    //         <div
-    //           style={{ display: "flex", width: "300px", paddingTop: "20px" }}
-    //         >
-    //           <img src="./images/call.png" width="28" height="28" />
-    //           <h4 className={HomeDesktopViewCss.phoneNumberh4Tag}>91+ 8942998873</h4>
-    //         </div>
-    //         <div
-    //           style={{ display: "flex", width: "300px", paddingTop: "20px" }}
-    //         >
-    //           <img src="./images/email.png" width="35" height="28" />
-    //           <h4  className={HomeDesktopViewCss.phoneNumberh4Tag}>mdsomad10@gmail.com</h4>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-
-    //   <div className={HomeDesktopViewCss.mainAvatarDiv}>
-    //     <div className={HomeDesktopViewCss.colDiv}>
-    //       <div className={HomeDesktopViewCss.AvatarDiv}>
-    //         <img className={HomeDesktopViewCss.imageTag} src="./images/profile-image.jpg" />
-    //       </div>
-
-    //       <p
-    //         style={{
-    //           textAlign: "center",
-    //           paddingTop: "30px",
-    //           paddingRight: "20px",
-    //           fontSize: "20px",
-    //           color: "white",
-    //         }}
-    //       >
-    //         I am a self taught programmer. <br /> Currently a App Developer as a
-    //         career path. <br />
-    //         I've app development experience of over 2+ Years. <br />
-    //         And programming experience of 3 years.
-    //       </p>
-    //     </div>
-    //   </div>
-
-    // </div>
   );
 };
 
