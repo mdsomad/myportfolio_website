@@ -73,7 +73,8 @@
   width: 95%;
   margin-top: 4vw;
   margin-bottom: 4vw;
-  background-color: white;
+  /* background-color: white; */
+  background-color:#f8f8ff  ;
 }
 
 
@@ -95,7 +96,7 @@
   width: 26vw;
   background-color: #01eefe;
   border-radius: 20px;
-  color: black;
+  color: #000000;
   font-size: 3vw;
   /* margin-right: 6vw; */
   text-align: center;
