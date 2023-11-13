@@ -37,7 +37,22 @@
     margin-top: 0px;
   }
 
+  .navigationButtonContainer{ display: flex; gap:10 }
 
+
+  /** Tablete size */
+@media (max-width: 850px) {
+  .navigationButtonContainer{
+    /* background-color: yellow; */
+    /* height: 100%; */
+    display: flex; gap:0.5vw;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4vw;
+  }
+}
+  
+  
 
 /** Mobile size */
 @media (max-width: 480px) {
