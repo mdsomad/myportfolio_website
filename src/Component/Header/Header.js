@@ -52,14 +52,14 @@ const Header = () => {
             )}
           </Link>
           <Link href="/skills/languages" onClick={() => setCurrentPageFun('/skills')}>
-            {currentPage == "/skills" ? (
+            {currentPage.includes("/skills") ? (
               <SelectedButton name={"Skills"} />
             ) : (
               <NotSelectedButton name={"Skills"} />
             )}
           </Link>
           <Link href="/projects" onClick={() => setCurrentPageFun('/projects')}>
-            {currentPage == "/projects" ? (
+            {currentPage.includes("/projects") ? (
               <SelectedButton name={"Projects"} />
             ) : (
               <NotSelectedButton name={"Projects"} />

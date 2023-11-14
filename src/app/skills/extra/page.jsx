@@ -2,15 +2,21 @@ import extraData from "@/models/extraData";
 import SkillNavigationBar from "@/Component/SkillsNavigationBar/SkillNavigationBar";
 import React from "react";
 import SkillsMobileView from "@/Component/mobile_view/SkillsMobileView";
+import SkillsBox from "@/Component/SkillsBox/SkillsBox";
 
 const extra = () => {
   return (
     <>
-    <SkillNavigationBar />
-    <div className="bodyContainer">
-      <SkillsMobileView languagesData={extraData} />
-    </div>
-  </>
+      <SkillNavigationBar />
+      <div className="desktopViewContainer">
+        {extraData.map((skill) => (
+          <SkillsBox languagesData={skill} />
+        ))}
+      </div>
+      <div className="mobileAndTabletVewContainer">
+        <SkillsMobileView languagesData={extraData} />
+      </div>
+    </>
   );
 };
 

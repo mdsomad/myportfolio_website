@@ -6,22 +6,22 @@ import skills from "@/app/skills/page";
 const SkillsBox = (props) => {
   return (
     <div className="skillsBox">
-      <a target="_blank" href={props.link} rel="noopener noreferrer">
+      <a target="_blank" href={props.languagesData.link} rel="noopener noreferrer">
         <img
           style={{ paddingLeft: "15px", marginRight: "15px" }}
-          src={props.logo}
+          src={props.languagesData.logo}
           width="70"
           height="70"
         />
       </a>
 
       <div style={{ paddingBottom: "10px" }}>
-        <h5 style={{ paddingBottom: "5px", color: "white" }}>{props.name}</h5>
-        <ProgressBarLabels Progress={props.Progress} />
+        <h5 style={{ paddingBottom: "5px", color: "white" }}>{props.languagesData.name}</h5>
+        <ProgressBarLabels Progress={props.languagesData.Progress} />
       </div>
 
       <h5 style={{ paddingTop: "18px", paddingLeft: "10px", color: "white" }}>
-        {props.percentageNumber}
+        {props.languagesData.percentageNumber}
       </h5>
     </div>
   );
