@@ -3,25 +3,26 @@ import SkillsMobileViewCss from "../mobile_view/SkillsMobileView.module.css";
 import ProgressBarLabels from "../SkillsBox/ProgressBarLabels";
 import MobileProgressBarLabels from "./MobileProgressBarLabels";
 
-const SkillsMobileView = ({ skillsData }) => {
+const SkillsMobileView = (props) => {
   return (
     <div className={SkillsMobileViewCss.mainCon}>
-      {skillsData.map((skill) => {
+      {props.languagesData.map((data,index) => {
         return (
-          <div className={SkillsMobileViewCss.skillItem}>
-            <a href={skill.link}>
+          <div key={index} className={SkillsMobileViewCss.skillItem}>
+            <a href={data.link}>
+        
               <img
                 className={SkillsMobileViewCss.imagTag}
-                src={skill.logo}
+                src={data.logo}
                 alt=""
               />
             </a>
             <div className={SkillsMobileViewCss.nameProgressParentDiv}>
-              <h6 className={SkillsMobileViewCss.nameText}>{skill.name}</h6>
-              <MobileProgressBarLabels Progress={skill.Progress} />
+              <h6 className={SkillsMobileViewCss.nameText}>{data.name}</h6>
+              <MobileProgressBarLabels Progress={data.Progress} />
             </div>
             <h6 className={SkillsMobileViewCss.percentageNumberText}>
-              {skill.percentageNumber}
+              {data.percentageNumber}
             </h6>
           </div>
         );

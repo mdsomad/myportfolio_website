@@ -39,11 +39,11 @@
 }
 
 .percentageNumberText {
-    margin-top:7vw;
-    margin-left: 1.5vw;
-    color:white;
-    font-size: 3.3vw;
-    font-weight: 500;
+  margin-top: 7vw;
+  margin-left: 1.5vw;
+  color: white;
+  font-size: 3.3vw;
+  font-weight: 500;
 }
 
 /** tableteView size */
@@ -70,7 +70,9 @@
 
   .imagTag {
     height: 5vw;
-    margin-left: 3vw;
+    width: 5vw;
+    background-color: red;
+    /* margin-left: 3vw; */
     /* width: vw; */
   }
 
@@ -81,18 +83,18 @@
     padding-left: 1vw;
     padding-bottom: 2vw;
   }
-  
+
   .nameText {
     color: white;
     font-size: 2vw;
     font-weight: 600;
   }
-  
+
   .percentageNumberText {
-      margin-top:3.5vw;
-      margin-left: 1.5vw;
-      color:white;
-      font-size: 2vw;
-      font-weight: 500;
+    margin-top: 3.5vw;
+    margin-left: 1.5vw;
+    color: white;
+    font-size: 2vw;
+    font-weight: 500;
   }
 }

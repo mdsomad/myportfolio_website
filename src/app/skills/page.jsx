@@ -30,17 +30,6 @@ const skillTypeTabsData = [
   "Design",
   "Extra",
 ];
-const comTabsData = [
-  <SkillsMobileView skillsData={languagesData} />,
-  <SkillsMobileView skillsData={languagesData} />,
-  <SkillsMobileView skillsData={languagesData} />,
-  <SkillsMobileView skillsData={languagesData} />,
-  <SkillsMobileView skillsData={languagesData} />,
-  // "Frameworks",
-  // "Backend",
-  // "Design",
-  // "Extra",
-];
 
 const skills = () => {
   const [skillType, setSkillType] = useState("Language");
@@ -79,6 +68,77 @@ const skills = () => {
         </div>
       </div>
 
+
+      <div className="tableteView">
+        <div className="tabContainer">
+          {skillTypeTabsData.map((tabViewType, index) => (
+            <div className="tab" onClick={() => toggleTab(index)}>
+              <h6
+                className={
+                  toggleState == index ? "activeTabText" : "notActiveTabText"
+                }
+              >
+                {tabViewType}
+              </h6>
+              <div
+                className={
+                  toggleState === index ? "activeTabs" : "activeNotTabs"
+                }
+              ></div>
+            </div>
+          ))}
+        </div>
+        {/* body */}
+        <div
+          className={
+            toggleState == 0
+              ? "frontendProjectActiveTab"
+              : "frontendProjectNotActiveTab"
+          }
+        >
+          <SkillsMobileView skillsData={languagesData} />
+        </div>
+
+        <div
+          className={
+            toggleState == 1
+              ? "frontendProjectActiveTab"
+              : "frontendProjectNotActiveTab"
+          }
+        >
+          <SkillsMobileView skillsData={frameworksData} />
+        </div>
+        <div
+          className={
+            toggleState == 2
+              ? "frontendProjectActiveTab"
+              : "frontendProjectNotActiveTab"
+          }
+        >
+          <SkillsMobileView skillsData={backendData} />
+        </div>
+        <div
+          className={
+            toggleState == 3
+              ? "frontendProjectActiveTab"
+              : "frontendProjectNotActiveTab"
+          }
+        >
+          <SkillsMobileView skillsData={designData} />
+        </div>
+        <div
+          className={
+            toggleState == 4
+              ? "frontendProjectActiveTab"
+              : "frontendProjectNotActiveTab"
+          }
+        >
+          <SkillsMobileView skillsData={extraData} />
+        </div>
+      </div>
+      
+      
+
       {/* Mobile size View */}
       <div className="mobileView">
         <div className="tabContainer">
@@ -107,7 +167,7 @@ const skills = () => {
               : "frontendProjectNotActiveTab"
           }
         >
-          <SkillsMobileView skillsData={languagesData} />
+         
         </div>
 
         <div

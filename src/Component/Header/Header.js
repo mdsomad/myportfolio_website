@@ -51,7 +51,7 @@ const Header = () => {
               <NotSelectedButton name={"Home"} />
             )}
           </Link>
-          <Link href="/skills" onClick={() => setCurrentPageFun('/skills')}>
+          <Link href="/skills/languages" onClick={() => setCurrentPageFun('/skills')}>
             {currentPage == "/skills" ? (
               <SelectedButton name={"Skills"} />
             ) : (
