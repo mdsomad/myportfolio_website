@@ -1,7 +1,8 @@
 .containerdiv {
   height: 650px;
-  width: 95%;
+  width: 100%;
   background-color: #1b1b1b;
+  /* background-color: yellow; */
   /* margin-top: 30px; */
   border-radius: 30px;
   display: flex;

@@ -1,0 +1,26 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  gap: 3vw;
+  padding-top: 2vw;
+}
+.mobileView {
+    display: none;
+}
+
+/** Mobile And Tablet View size  */
+@media (max-width: 480px) {
+  .Container{
+    display: none;
+  }
+  .mobileView {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    gap: 3vw;
+    padding-top: 2vw;
+  }
+}

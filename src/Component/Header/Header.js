@@ -58,7 +58,7 @@ const Header = () => {
               <NotSelectedButton name={"Skills"} />
             )}
           </Link>
-          <Link href="/projects" onClick={() => setCurrentPageFun('/projects')}>
+          <Link href="/projects/frontendprojects" onClick={() => setCurrentPageFun('/projects')}>
             {currentPage.includes("/projects") ? (
               <SelectedButton name={"Projects"} />
             ) : (

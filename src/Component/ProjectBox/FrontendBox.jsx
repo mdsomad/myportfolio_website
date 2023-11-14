@@ -5,7 +5,7 @@ const FrontendBox = (props) => {
   return (
     <div className={FrontendBoxCss.containerdiv}>
       <div className={FrontendBoxCss.containerscreenshots}>
-        {props.screenshots.map((data, index) => {
+        {props.frontendProjectData.screenshots.map((data, index) => {
           return <img className={FrontendBoxCss.imgTag} src={data} />;
         })}
       </div>
@@ -13,19 +13,19 @@ const FrontendBox = (props) => {
       <div className={FrontendBoxCss.containerchild}>
         <div style={{ display: "flex", marginTop: "40px", width: "100%" }}>
           <div style={{ width: "330px" }}>
-            <h3 className={FrontendBoxCss.h3}>{props.appName} hello</h3>
+            <h3 className={FrontendBoxCss.h3}>{props.frontendProjectData.appName}</h3>
           </div>
 
           <div style={{ width: "220px" }}>
             <a
               target="_blank"
-              href={props.sourceCodeLink}
+              href={props.frontendProjectData.sourceCodeLink}
               rel="noopener noreferrer"
             >
               <div className={FrontendBoxCss.projectViewButton}>
                 <img
                   className={FrontendBoxCss.buttonprojecticon}
-                  src="./images/github2.png"
+                  src="/images/github2.png"
                 />
                 <h6 className={FrontendBoxCss.h6}>Check Now</h6>
               </div>
@@ -33,7 +33,7 @@ const FrontendBox = (props) => {
           </div>
         </div>
 
-        {props.isYoutube == true ? (
+        {props.frontendProjectData.isYoutube == true ? (
           <div
             style={{
               display: "flex",
@@ -48,13 +48,13 @@ const FrontendBox = (props) => {
             <div style={{ width: "220px" }}>
               <a
                 target="_blank"
-                href={props.demoVideoLink}
+                href={props.frontendProjectData.demoVideoLink}
                 rel="noopener noreferrer"
               >
                 <div className={FrontendBoxCss.videoButton}>
                   <img
                     className={FrontendBoxCss.buttonprojecticon}
-                    src="./images/youtube.png"
+                    src="/images/youtube.png"
                   />
                   <h6 className={FrontendBoxCss.h6}>Watch Now</h6>
                 </div>
@@ -76,15 +76,15 @@ const FrontendBox = (props) => {
         >
           <h5 className={FrontendBoxCss.h5}>Source code link:</h5>
           <button className={FrontendBoxCss.sourcecodetext}>
-            {props.sourceCodeLink}
+            {props.frontendProjectData.sourceCodeLink}
           </button>
         </div>
 
-        <h1 className={FrontendBoxCss.h1}>Using {props.frameworkName}</h1>
+        <h1 className={FrontendBoxCss.h1}>Using {props.frontendProjectData.frameworkName}</h1>
 
         <img
           className={FrontendBoxCss.frameworklogoimgTag}
-          src={props.frameworkLogo}
+          src={props.frontendProjectData.frameworkLogo}
         />
       </div>
     </div>

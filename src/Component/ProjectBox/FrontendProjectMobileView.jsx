@@ -7,7 +7,7 @@ const FrontendProjectMobileView = (props) => {
   return (
     <div className={FrontendProjectMobileViewCss.mainContainer}>
       <div className={FrontendProjectMobileViewCss.screenshotsContainer}>
-        {props.screenshots.map((data, index) => {
+        {props.frontendProjectData.screenshots.map((data, index) => {
           return (
             <img
               className={FrontendProjectMobileViewCss.screenshotBox}
@@ -19,7 +19,7 @@ const FrontendProjectMobileView = (props) => {
       </div>
       <div className={FrontendProjectMobileViewCss.detailsContainer}>
         <h5 className={FrontendProjectMobileViewCss.projectNameText}>
-          {props.appName}
+          {props.frontendProjectData.appName}
         </h5>
         <div
           style={{
@@ -34,19 +34,19 @@ const FrontendProjectMobileView = (props) => {
           >
             Source Code Link :{" "}
             <span style={{ color: "#589bff", fontWeight: "300" }}>
-              {props.sourceCodeLink}
+              {props.frontendProjectData.sourceCodeLink}
             </span>
           </h6>
         </div>
         <h5 className={FrontendProjectMobileViewCss.frameworkNameText}>
-          Using {props.frameworkName}
+          Using {props.frontendProjectData.frameworkName}
         </h5>
         <div
           className={FrontendProjectMobileViewCss.frameworkLogoParentContainer}
         >
           <img
             className={FrontendProjectMobileViewCss.frameworkLogo}
-            src={props.frameworkLogo}
+            src={props.frontendProjectData.frameworkLogo}
             alt=""
           />
           <div
@@ -61,7 +61,7 @@ const FrontendProjectMobileView = (props) => {
             }}
           >
             {props.isYoutube == true ? (
-              <a href={props.demoVideoLink}>
+              <a href={props.frontendProjectData.demoVideoLink}>
                 <div className={FrontendProjectMobileViewCss.ButtonContainer}>
                   <AiFillYoutube
                     className={FrontendProjectMobileViewCss.youtubeIcon}
@@ -73,7 +73,7 @@ const FrontendProjectMobileView = (props) => {
               </a>
             ) : null}
 
-            <a href={props.sourceCodeLink}>
+            <a href={props.frontendProjectData.sourceCodeLink}>
               <div className={FrontendProjectMobileViewCss.ButtonContainer}>
                 <AiFillGithub
                   className={FrontendProjectMobileViewCss.githubIcon}

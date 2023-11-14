@@ -3,7 +3,7 @@
 .mainContainer{
   height: auto;
   min-height: 10vw;
-  width: 95%;
+  width: 100%;
   border-radius: 1vw;
   background-color: #36454f;
   display: flex;
@@ -119,17 +119,16 @@ width: 60vw;
 /** Tablets size */
 @media (max-width: 480px) {
 
-
-
   .mainContainer{
-    height: auto;
-    min-height: 20vw;
-    width: 98%;
+    height: 20vw;;
+    width: 100%;
     border-radius: 2vw;
-    background-color: #36454f;
+    /* background-color: #36454f; */
+    background-color: red;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* margin-bottom: 4vw; */
   }
   
   
@@ -228,7 +227,7 @@ width: 60vw;
   .mainContainer{
     height: auto;
     min-height: 20vw;
-    width: 95%;
+    width: 100%;
     border-radius: 2vw;
     background-color: #36454f;
     display: flex;
