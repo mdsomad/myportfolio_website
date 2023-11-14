@@ -29,7 +29,7 @@ const SkillNavigationBar = () => {
         Backend{" "}
       </Link>
       <Link href="/skills/design" className={currentPage.includes("design") ? SkillNavigationBarCss.selectedlinkTag: SkillNavigationBarCss.linkTag}>
-        Desin{" "}
+        Design{" "}
       </Link>
       <Link href="/skills/extra" className={currentPage.includes("extra") ? SkillNavigationBarCss.selectedlinkTag: SkillNavigationBarCss.linkTag}>
         Extra{" "}
