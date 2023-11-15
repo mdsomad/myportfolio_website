@@ -1,26 +1,23 @@
 import "../SkillsBox/SkillsBox.css";
 import React from "react";
 import ProgressBarLabels from "./ProgressBarLabels";
-import skills from "@/app/skills/page";
 
 const SkillsBox = (props) => {
   return (
     <div className="skillsBox">
       <a target="_blank" href={props.languagesData.link} rel="noopener noreferrer">
         <img
-          style={{ paddingLeft: "15px", marginRight: "15px" }}
+        className={props.languagesData.name === "Flutter"? "flutterLogoStyle": "imaTag"}
           src={props.languagesData.logo}
-          width="70"
-          height="70"
         />
       </a>
 
-      <div style={{ paddingBottom: "10px" }}>
-        <h5 style={{ paddingBottom: "5px", color: "white" }}>{props.languagesData.name}</h5>
+      <div style={{ display:"flex",flexDirection:"column", gap:"0.2vw" }}>
+        <h5 style={{color: "white",fontSize:"1vw", fontWeight:"500"}}>{props.languagesData.name}</h5>
         <ProgressBarLabels Progress={props.languagesData.Progress} />
       </div>
 
-      <h5 style={{ paddingTop: "18px", paddingLeft: "10px", color: "white" }}>
+      <h5 style={{ paddingTop: "1.4vw",fontSize:"0.9vw", color: "white" }}>
         {props.languagesData.percentageNumber}
       </h5>
     </div>

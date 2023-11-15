@@ -7,9 +7,9 @@ const ProgressBarLabels = ({ Progress }) => {
       <div
         //  className={ProgressBar.ProgressBarLabelsColor}
         style={{
-          height: "12px",
+          height: "100%",
           width: `${Progress}%`,
-          borderRadius: "7px",
+          borderRadius: "1.5vw",
           backgroundColor: "#01EEFE",
         }}
       ></div>

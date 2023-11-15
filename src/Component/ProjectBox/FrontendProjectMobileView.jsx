@@ -32,7 +32,7 @@ const FrontendProjectMobileView = (props) => {
           <h6
             className={FrontendProjectMobileViewCss.projectSourceCodeLinkText}
           >
-            Source Code Link :{" "}
+            Source Code Link :
             <span style={{ color: "#589bff", fontWeight: "300" }}>
               {props.frontendProjectData.sourceCodeLink}
             </span>
@@ -60,7 +60,7 @@ const FrontendProjectMobileView = (props) => {
               gap: "3vw",
             }}
           >
-            {props.isYoutube == true ? (
+            {props.frontendProjectData.isYoutube == true ? (
               <a href={props.frontendProjectData.demoVideoLink}>
                 <div className={FrontendProjectMobileViewCss.ButtonContainer}>
                   <AiFillYoutube

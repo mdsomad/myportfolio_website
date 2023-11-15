@@ -46,7 +46,7 @@ const skills = () => {
       </div>
     </>
   );
-  
+
   // return (
   //   <>
   //     {/* DesktopView size  */}
@@ -75,7 +75,6 @@ const skills = () => {
   //         </div>
   //       </div>
   //     </div>
-
 
   //     <div className="tableteView">
   //       <div className="tabContainer">
@@ -144,8 +143,6 @@ const skills = () => {
   //         <SkillsMobileView skillsData={extraData} />
   //       </div>
   //     </div>
-      
-      
 
   //     {/* Mobile size View */}
   //     <div className="mobileView">
@@ -175,7 +172,7 @@ const skills = () => {
   //             : "frontendProjectNotActiveTab"
   //         }
   //       >
-         
+
   //       </div>
 
   //       <div

@@ -1,13 +1,21 @@
-import Header from "@/Component/Header/Header";
-import React from "react";
+"use client";
+import HomeDesktopView from '@/Component/desktop_view/HomeDesktopView';
+import './home.css';
+import React from 'react'
+import HomeMobileView from '@/Component/mobile_view/HomeMobileView';
 
-const Home = () => {
+const home = () => {
   return (
     <>
-      <div>Home Home</div>
-      <img src="./images/google-play.svg" />
-    </>
-  );
-};
+     <div className="HomeDesktopView" >
+       <HomeDesktopView/>
+     </div>
+     <div className="HomeMobileView" >
+       <HomeMobileView/>
+     </div>
+     
+     </>
+  )
+}
 
-export default Home;
+export default home

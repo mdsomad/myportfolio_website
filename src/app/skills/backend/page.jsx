@@ -1,4 +1,5 @@
-import "./backend.css";
+"use client";
+import BackendCss from "./backend.module.css";
 import backendData from "@/models/backendData";
 import SkillNavigationBar from "@/Component/SkillsNavigationBar/SkillNavigationBar";
 import React from "react";
@@ -9,12 +10,12 @@ const backend = () => {
   return (
     <>
       <SkillNavigationBar />
-      <div className="desktopViewContainer">
+      <div className={BackendCss.desktopViewContainer}>
         {backendData.map((skill) => (
           <SkillsBox languagesData={skill} />
         ))}
       </div>
-      <div className="mobileAndTabletVewContainer">
+      <div className={BackendCss.mobileAndTabletVewContainer}>
         <SkillsMobileView languagesData={backendData} />
       </div>
     </>

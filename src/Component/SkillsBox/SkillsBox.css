@@ -1,12 +1,24 @@
 .skillsBox {
   display: flex;
-  height: 120px;
-  width: 265px;
+  height: 6.3vw;
+  width: 14vw;
   background-color: #1f1e1e;
-  border-top-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-top-left-radius: 1.5vw;
+  border-bottom-right-radius: 1.5vw;
   align-items: center;
+  justify-content: center;
+  gap: 1vw;
   /* margin-top: 40px; */
   /* margin-left: 10px; */
   /* margin-right: 20px; */
+}
+
+.imaTag{
+  height: 3vw;
+  width: 3vw;
+}
+.flutterLogoStyle{
+  height: 3vw;
+  /* width: 2vw; */
+  /* background-color: green; */
 }

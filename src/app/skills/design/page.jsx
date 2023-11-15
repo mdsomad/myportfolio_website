@@ -1,4 +1,4 @@
-import "./design.css";
+import DesignCss from "./design.module.css";
 import designData from "@/models/designData";
 import SkillNavigationBar from "@/Component/SkillsNavigationBar/SkillNavigationBar";
 import React from "react";
@@ -9,12 +9,12 @@ const design = () => {
   return (
     <>
       <SkillNavigationBar />
-      <div className="desktopViewContainer">
+      <div className={DesignCss.desktopViewContainer}>
         {designData.map((skill) => (
           <SkillsBox languagesData={skill} />
         ))}
       </div>
-      <div className="mobileAndTabletVewContainer">
+      <div className={DesignCss.mobileAndTabletVewContainer}>
         <SkillsMobileView languagesData={designData} />
       </div>
     </>

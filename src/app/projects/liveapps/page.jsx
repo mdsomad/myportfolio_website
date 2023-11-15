@@ -1,14 +1,21 @@
+"use client";
+import "./liveApps.css";
+import LiveAppBox from "@/Component/ProjectBox/LiveAppBox";
 import ProjectsnavigationBar from "@/Component/ProjectsNavigationBar/ProjectsnavigationBar";
-import "./LiveApps.css";
-import React from 'react'
+import React from "react";
+import liveAppData from "@/models/projectData/liveAppsData";
 
 const liveApps = () => {
   return (
-    <div>
-        <ProjectsnavigationBar/>
-      LiveApps
-    </div>
-  )
-}
+    <>
+      <ProjectsnavigationBar />
+      <div className="VewContainer">
+        {liveAppData.map((data) => (
+          <LiveAppBox liveAppData={data} />
+        ))}
+      </div>
+    </>
+  );
+};
 
-export default liveApps
+export default liveApps;

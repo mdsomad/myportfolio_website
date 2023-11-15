@@ -1,76 +1,162 @@
-.mainContainer {
-  display: flex;
-  height: 25vw;
-  width: 100%;
-  background-color: #36454f;
-  border-radius: 3vw;
-}
 
-.textParentContainer {
-  display: flex;
-  flex-direction: column;
-  /* background-color: green; */
-  width: 75%;
-  height: 100%;
-  justify-content: center;
-  gap: 1vw;
-  padding-left: 4vw;
-}
+@media (max-width:850px) {
+  .mainContainer {
+    display: flex;
+    height: 22vw;
+    width: 100%;
+    background-color: #36454f;
+    /* background-color: red; */
+    border-radius: 3vw;
+  }
 
-.text1 {
-    font-size: 3.3vw;
+  .textParentContainer {
+    display: flex;
+    flex-direction: column;
+    /* background-color: green; */
+    width: 75%;
+    height: 100%;
+    justify-content: center;
+    gap: 1vw;
+    padding-left: 4vw;
+  }
+
+  .text1 {
+    font-size: 3.1vw;
     font-weight: 700;
     color: white;
-}
-.text2 {
-    font-size: 3vw;
+  }
+  .text2 {
+    font-size: 2.8vw;
     font-weight: 500;
     color: white;
-}
-.linkTextContainer{
+  }
+  .linkTextContainer {
     /* background-color: blue; */
     padding-right: 5vw;
-    margin-top: 1.2vw;
-}
-.text3 {
+    margin-top:0.6vw;
+  }
+  .text3 {
     font-size: 3vw;
     color: white;
     /* text-overflow: ellipsis; */
     overflow: auto;
     white-space: nowrap;
+  }
+
+  .buttonAndLogoParentContainer {
+    /* background-color: red; */
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+  }
+  .frameworkLogo {
+    height: 8vw;
+    width: 8vw;
+  }
+
+  .buttonParentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vw;
+    width: 15vw;
+    background-color: #01d7e6;
+    border-radius:3vw;
+    gap: 1vw;
+  }
+
+  .githubIcon {
+    font-size: 3.3vw;
+  }
+  .buttonText {
+    font-size: 1.3vw;
+    font-weight: 600;
+    color: black;
+    align-items: center;
+  }
 }
 
-.buttonAndLogoParentContainer {
-  /* background-color: red; */
-  width: 25%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2vw;
-}
-.frameworkLogo{
-  height: 10vw;
-  width: 10vw;
-}
 
-.buttonParentContainer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
- height: 6vw;
- width: 18vw;
- background-color: #01d7e6;
- border-radius: 3vw;
- gap: 1vw;
-}
 
-.githubIcon{
-  font-size: 4vw;
-}
-.buttonText{
-  font-size: 1.5vw;
-  font-weight: 700;
-  color:black;
+@media (max-width:480px) {
+  .mainContainer {
+    display: flex;
+    height: 25vw;
+    width: 100%;
+    background-color: #36454f;
+    border-radius: 3vw;
+  }
+
+  .textParentContainer {
+    display: flex;
+    flex-direction: column;
+    /* background-color: green; */
+    width: 75%;
+    height: 100%;
+    justify-content: center;
+    gap: 1vw;
+    padding-left: 4vw;
+  }
+
+  .text1 {
+    font-size: 3.3vw;
+    font-weight: 700;
+    color: white;
+  }
+  .text2 {
+    font-size: 3vw;
+    font-weight: 500;
+    color: white;
+  }
+  .linkTextContainer {
+    /* background-color: blue; */
+    padding-right: 5vw;
+    margin-top: 1.2vw;
+  }
+  .text3 {
+    font-size: 3vw;
+    color: white;
+    /* text-overflow: ellipsis; */
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  .buttonAndLogoParentContainer {
+    /* background-color: red; */
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+  }
+  .frameworkLogo {
+    height: 10vw;
+    width: 10vw;
+  }
+
+  .buttonParentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vw;
+    width: 18vw;
+    background-color: #01d7e6;
+    border-radius: 3vw;
+    gap: 1vw;
+  }
+
+  .githubIcon {
+    font-size: 4vw;
+  }
+  .buttonText {
+    font-size: 1.5vw;
+    font-weight: 700;
+    color: black;
+  }
 }

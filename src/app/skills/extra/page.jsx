@@ -1,3 +1,4 @@
+import ExtraCss from "./extra.module.css";
 import extraData from "@/models/extraData";
 import SkillNavigationBar from "@/Component/SkillsNavigationBar/SkillNavigationBar";
 import React from "react";
@@ -8,12 +9,12 @@ const extra = () => {
   return (
     <>
       <SkillNavigationBar />
-      <div className="desktopViewContainer">
+      <div className={ExtraCss.desktopViewContainer}>
         {extraData.map((skill) => (
           <SkillsBox languagesData={skill} />
         ))}
       </div>
-      <div className="mobileAndTabletVewContainer">
+      <div className={ExtraCss.mobileAndTabletVewContainer}>
         <SkillsMobileView languagesData={extraData} />
       </div>
     </>

@@ -8,14 +8,12 @@ const ProjectsnavigationBar = () => {
   const [currentPage, setCurrentPage] = useState("");
   const getCurrentPage = usePathname();
 
-  let setCurrentPageFunction = (pagedata) => {
-    setCurrentPage(pagedata);
-  };
+ 
 
   useEffect(() => {
-    console.log(getCurrentPage);
+    // console.log(getCurrentPage);
     setCurrentPage(getCurrentPage);
-  }, []);
+  }, [usePathname]);
 
   return (
     <div className={ProjectsnavigationBarCss.mainContainer}>

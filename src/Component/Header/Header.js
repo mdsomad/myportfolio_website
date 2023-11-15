@@ -5,25 +5,19 @@ import React, { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import NotSelectedButton from "./NotSelectedButton";
 import SelectedButton from "./SelectedButton";
-// import { usePathname } from 'next/navigation';
+import { usePathname, useSearchParams } from 'next/navigation'
 
-import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [currentPage, setCurrentPage] = useState("");
-  const currentPageNew = usePathname();
+  const pathname = usePathname()
 
-
-  let setCurrentPageFun = (pagedata) => {
-    // Component()
-    setCurrentPage(pagedata)
-    console.log(currentPageNew);
-  };
-
+  
   useEffect(() => {
-    console.log(currentPageNew);
-    setCurrentPage(currentPageNew)
-  }, []);
+    setCurrentPage(pathname);
+    // console.log("call useEffect");
+    // console.log("call Now pathname --> "+{pathname});
+  }, [pathname]);
 
   return (
     <>
@@ -36,6 +30,7 @@ const Header = () => {
             fontWeight: "bold",
           }}
         >
+          {/* Current pathname: {pathname} */}
           Portfolio.
         </h4>
 
@@ -43,29 +38,40 @@ const Header = () => {
           className={"navigationButtonContainer"}
           // className="flex gap-8"
         >
-          <Link href="/" onClick={() => setCurrentPageFun("/")}>
-            {" "}
-            {currentPage == "/" ? (
+          <Link
+            href="/"
+            // onClick={() => setCurrentPage(pathname)}
+          >
+            {currentPage == "/" || currentPage == "/home" ? (
               <SelectedButton name={"Home"} />
             ) : (
               <NotSelectedButton name={"Home"} />
             )}
           </Link>
-          <Link href="/skills/languages" onClick={() => setCurrentPageFun('/skills')}>
+          <Link
+            href="/skills/languages"
+            //  onClick={() => setCurrentPage(pathname)}
+          >
             {currentPage.includes("/skills") ? (
               <SelectedButton name={"Skills"} />
             ) : (
               <NotSelectedButton name={"Skills"} />
             )}
           </Link>
-          <Link href="/projects/frontendprojects" onClick={() => setCurrentPageFun('/projects')}>
+          <Link
+            href="/projects/frontendprojects"
+            //  onClick={() => setCurrentPage(pathname)}
+          >
             {currentPage.includes("/projects") ? (
               <SelectedButton name={"Projects"} />
             ) : (
               <NotSelectedButton name={"Projects"} />
             )}
           </Link>
-          <Link href="/crew" onClick={() => setCurrentPageFun('/crew')}>
+          <Link
+            href="/crew"
+            //  onClick={() => setCurrentPage(pathname)}
+          >
             {currentPage == "/crew" ? (
               <SelectedButton name={"Crew"} />
             ) : (

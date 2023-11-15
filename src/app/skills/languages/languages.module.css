@@ -1,0 +1,25 @@
+.desktopViewContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:1.5vw;
+  padding-left:2%;
+  padding-top:30px;
+
+}
+
+.mobileAndTabletVewContainer {
+  display: none;
+}
+
+/** Mobile And Tablet View size  */
+@media (max-width: 850px) {
+  .desktopViewContainer {
+    display: none;
+  }
+  .mobileAndTabletVewContainer {
+    display: block;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+}

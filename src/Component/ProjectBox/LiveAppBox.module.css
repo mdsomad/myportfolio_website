@@ -1,104 +1,375 @@
+/** desktop View size  */
+@media (min-width: 1281px) {
+.mainContainer {
+  display: flex;
+  height: 11vw;
+  width: 100%;
+  background-color: #36454f;
+  border-radius: 1vw;
+  margin-bottom: 2vw;
+  margin-top: 1vw;
+}
+
+.textParentContainer {
+  display: flex;
+  flex-direction: column;
+  /* background-color: green; */
+  width: 85%;
+  height: 100%;
+  justify-content: center;
+  gap: 0.5vw;
+  padding-left: 2vw;
+}
+
+.text1 {
+  font-size: 1.5vw;
+  font-weight: 700;
+  color: white;
+}
+.descriptionTextParentContainer {
+  height: auto;
+  max-height: 4vw;
+  width: 100%;
+  /* background-color: teal; */
+  overflow: auto;
+}
+.descriptionText {
+  font-size: 1vw;
+  font-weight: 500;
+  color: white;
+}
+.linkTextContainer {
+  /* background-color: blue; */
+  padding-right: 2vw;
+  padding-right: 2vw;
+  /* margin-top: 0.5vw; */
+  /* margin-bottom: 2vw; */
+}
+.text3 {
+  font-size: 1vw;
+  color: white;
+  /* text-overflow: ellipsis; */
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.buttonAndLogoParentContainer {
+  /* background-color: red; */
+  width: 15%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  gap: 1.2vw;
+  /* padding-top: 7vw; */
+  /* padding-left: 8vw; */
+}
+.frameworkLogo {
+  height: 4vw;
+  width: 4vw;
+  /* background-color: yellow; */
+}
+
+.buttonParentContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2vw;
+  width: 7vw;
+  background-color: #01d7e6;
+  border-radius: 3vw;
+  gap: 0.5vw;
+  /* margin-bottom: 8vw; */
+}
+
+.buttonLogo {
+  height: 1.2vw;
+  width: 1.2vw;
+}
+.buttonText {
+  font-size: 0.7vw;
+  font-weight: 700;
+  color: black;
+  /* margin-top: 0.3vw; */
+}
+
+}
+
+/** laptop View size  */
+@media (max-width: 1280px) {
+    .mainContainer {
+        display: flex;
+        height: 14vw;
+        width: 100%;
+        background-color: #36454f;
+        border-radius: 1vw;
+        margin-bottom: 2vw;
+      }
+    
+      .textParentContainer {
+        display: flex;
+        flex-direction: column;
+        /* background-color: green; */
+        width: 85%;
+        height: 100%;
+        justify-content: center;
+        gap: 0.5vw;
+        padding-left: 2vw;
+      }
+    
+      .text1 {
+        font-size: 2vw;
+        font-weight: 700;
+        color: white;
+      }
+      .descriptionTextParentContainer {
+        height: 4vw;
+        width: 100%;
+        /* background-color: teal; */
+        overflow: auto;
+      }
+      .descriptionText {
+        font-size: 1vw;
+        font-weight: 500;
+        color: white;
+      }
+      .linkTextContainer {
+        /* background-color: blue; */
+        padding-right: 2vw;
+        margin-top: 0.5vw;
+      }
+      .text3 {
+        font-size: 1.8vw;
+        color: white;
+        /* text-overflow: ellipsis; */
+        overflow: auto;
+        white-space: nowrap;
+      }
+    
+      .buttonAndLogoParentContainer {
+        /* background-color: red; */
+        width: 15%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        gap: 1.2vw;
+        padding-top: 7vw;
+        /* padding-left: 8vw; */
+      }
+      .frameworkLogo {
+        height: 6vw;
+        width: 6vw;
+        /* background-color: yellow; */
+      }
+    
+      .buttonParentContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3vw;
+        width: 10vw;
+        background-color: #01d7e6;
+        border-radius: 3vw;
+        gap: 0.5vw;
+        margin-bottom: 8vw;
+      }
+    
+      .buttonLogo {
+        height: 2vw;
+        width: 2vw;
+      }
+      .buttonText {
+        font-size: 1vw;
+        font-weight: 700;
+        color: black;
+        /* margin-top: 0.3vw; */
+      }
+}
 
 
-.container{
-    height: auto;
-    min-height: 220px;
-    width: 95%;
-    background-color: #36454f;
-    margin-top: 40px;
-    border-radius: 20px;
+/** Tablet View size  */
+@media (max-width: 850px) {
+    .mainContainer {
+        display: flex;
+        height: 22vw;
+        width: 100%;
+        background-color: #36454f;
+        border-radius: 3vw;
+        margin-bottom: 3vw;
+      }
+    
+      .textParentContainer {
+        display: flex;
+        flex-direction: column;
+        /* background-color: green; */
+        width: 75%;
+        height: 100%;
+        justify-content: center;
+        gap: 1vw;
+        padding-left: 4vw;
+      }
+    
+      .text1 {
+        font-size: 3vw;
+        font-weight: 700;
+        color: white;
+      }
+      .descriptionTextParentContainer {
+        height: 7vw;
+        width: 100%;
+        /* background-color: teal; */
+        overflow: auto;
+      }
+      .descriptionText {
+        font-size: 1.8vw;
+        font-weight: 500;
+        color: white;
+      }
+      .linkTextContainer {
+        /* background-color: blue; */
+        padding-right: 2vw;
+        margin-top: 0.5vw;
+      }
+      .text3 {
+        font-size: 2.8vw;
+        color: white;
+        /* text-overflow: ellipsis; */
+        overflow: auto;
+        white-space: nowrap;
+      }
+    
+      .buttonAndLogoParentContainer {
+        /* background-color: red; */
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        gap: 1.5vw;
+        padding-top: 7vw;
+      }
+      .frameworkLogo {
+        height: 8vw;
+        width: 8vw;
+        /* background-color: yellow; */
+      }
+    
+      .buttonParentContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4.8vw;
+        width: 15vw;
+        background-color: #01d7e6;
+        border-radius: 3vw;
+        gap: 0.5vw;
+        margin-bottom: 8vw;
+      }
+    
+      .buttonLogo {
+        height: 3vw;
+        width: 3vw;
+      }
+      .buttonText {
+        font-size: 1.5vw;
+        font-weight: 700;
+        color: black;
+        /* margin-top: 0.3vw; */
+      }
+}
+
+/** Mobile View size  */
+@media (max-width: 480px) {
+  .mainContainer {
     display: flex;
-    padding-left: 30px;
-}
+    height: 28vw;
+    width: 100%;
+    background-color: #36454f;
+    border-radius: 3vw;
+    margin-bottom: 3vw;
+  }
 
-
-.nameText{
-    font-size: 25px;
-    color: white;
-    margin-top: 35px;
-    font-weight: 500;
-}
-
-/* p{
-    font-size: 50px;
-    color: yellow;
-    margin-top: 10px;
-    font-weight: 400;
-
-} */
-
-.sourceCodeText{
-    font-size: 25px;
-    color: white;
-    margin-top: 10px;
-    font-weight: 400;
-    /* white-space: nowrap; */
-    
-   
-}
-
-.linkkText{
-    font-size: 25px;
-    color: #589bff;
-    margin-top: 10px;
-    font-weight: 300;
-    margin-left: 10px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    
-}
-
-.logoContainer{
-    /* background-color: red; */
+  .textParentContainer {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    margin-right: 30px;
-}
+    /* background-color: green; */
+    width: 75%;
+    height: 100%;
+    justify-content: center;
+    gap: 1vw;
+    padding-left: 4vw;
+  }
 
+  .text1 {
+    font-size: 3.5vw;
+    font-weight: 700;
+    color: white;
+  }
+  .descriptionTextParentContainer {
+    height: 8vw;
+    width: 100%;
+    /* background-color: teal; */
+    overflow: auto;
+  }
+  .descriptionText {
+    font-size: 2vw;
+    font-weight: 500;
+    color: white;
+  }
+  .linkTextContainer {
+    /* background-color: blue; */
+    padding-right: 5vw;
+    margin-top: 1.2vw;
+  }
+  .text3 {
+    font-size: 3.2vw;
+    color: white;
+    /* text-overflow: ellipsis; */
+    overflow: auto;
+    white-space: nowrap;
+  }
 
-.frameworkLogo{
-    height: 100px;
-    width: 100px;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    margin-right: 5px;
-}
-
-
-
-.buttonContainer {
-    height: 40px;
-    width: 150px;
-    background-color: #01d7e6;
-    border-radius: 30px;
+  .buttonAndLogoParentContainer {
+    /* background-color: red; */
+    width: 25%;
+    height: 100%;
     display: flex;
-    justify-items: center;
-    justify-content: start;
-}
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 2vw;
+    padding-top: 8vw;
+  }
+  .frameworkLogo {
+    height: 10vw;
+    width: 10vw;
+    /* background-color: yellow; */
+  }
 
+  .buttonParentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vw;
+    width: 18vw;
+    background-color: #01d7e6;
+    border-radius: 3vw;
+    gap: 1vw;
+    margin-bottom: 8vw;
+  }
 
-.buttonIcon{
-    height: 27px;
-    width: 27px;
-    margin-top: 6px;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-.projectButtonText {
-    font-size: 14px;
-    font-weight: 600;
-    align-self: center;
-    color: #36454f;
-}
-
-
-.descriptionText{
-    color: greenyellow;
-}
-
-.demoText{
-    color:white;
+  .buttonLogo {
+    height: 4vw;
+    width: 4vw;
+  }
+  .buttonText {
+    font-size: 1.5vw;
+    font-weight: 700;
+    color: black;
+    margin-top: 0.3vw;
+  }
 }

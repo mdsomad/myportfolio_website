@@ -2,9 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-left:2%;
-  padding-top:30px;
-
+  padding-left: 2%;
+  padding-top: 30px;
 }
 
 .mobileAndTabletVewContainer {
