@@ -10,6 +10,7 @@ import LiveAppBox from "@/Component/ProjectBox/LiveAppBox";
 import FrontendProjectMobileView from "@/Component/ProjectBox/FrontendProjectMobileView";
 import ProjectsnavigationBar from "@/Component/ProjectsNavigationBar/ProjectsnavigationBar";
 import frontendProjectData from "@/models/projectData/frontendProjectData";
+import Head from "next/head";
 
 const skillTypeTabs = ["FrontendProjects", "BackendProjects", "LiveApps"];
 
@@ -51,48 +52,31 @@ const skillData = {
 const projects = () => {
   const [skillType, setSkillType] = useState("FrontendProjects");
 
+  const proojectTypeTabsData = ["Frontend Projects", "Backend projects"];
 
-
-
-
-
-  const proojectTypeTabsData = [
-    "Frontend Projects",
-    "Backend projects"
-  ];
-  
-  
-  
   const [toggleState, setToggleState] = useState(0);
   const toggleTab = (index) => {
     setToggleState(index);
   };
   return (
-
-
-
     <>
-    <ProjectsnavigationBar />
-    <div className="desktopViewContainer">
-      {frameworkProjectData.map((data) => (
-        <FrontendBox frontendProjectData={data} />
-      ))}
-    </div>
+      
+      <ProjectsnavigationBar />
+      <div className="desktopViewContainer">
+        {frameworkProjectData.map((data) => (
+          <FrontendBox frontendProjectData={data} />
+        ))}
+      </div>
 
-    <div className="mobileAndTabletVewContainer">
-      {frontendProjectData.map((data) => (
-        <FrontendProjectMobileView frontendProjectData={data} />
-      ))}
-    </div>
-  </>
-    
-    
-    
-    
-    
-    
+      <div className="mobileAndTabletVewContainer">
+        {frontendProjectData.map((data) => (
+          <FrontendProjectMobileView frontendProjectData={data} />
+        ))}
+      </div>
+    </>
+
     // <>
-    
+
     //   <div className="desktopView">
     //     <div className="p-4 py-0">
     //       <div className="flex w-[100%] justify-between p-4 py-10">
@@ -121,12 +105,10 @@ const projects = () => {
     //     </div>
     //   </div>
 
-    
     //  {/* Tablete Code */}
     //  <div className="tabletView">
 
     //     <div className="tabContainer">
-
 
     //     {proojectTypeTabsData.map((tabViewType, index) => (
     //         <div className="tab" onClick={() => toggleTab(index)}>
@@ -172,13 +154,10 @@ const projects = () => {
     //     </div>
     //   </div>
 
-
-
     //   {/* MobileView Code */}
     //   <div className="mobileView">
     //     <div className="tabContainer">
 
-        
     //     {proojectTypeTabsData.map((tabViewType, index) => (
     //         <div className="tab" onClick={() => toggleTab(index)}>
     //           <h6
@@ -206,7 +185,6 @@ const projects = () => {
     //       }
     //     >
 
-          
     //       {frameworkProjectData.map((skill) => (
     //         <FrontendProjectMobileView {...skill} />
     //       ))}

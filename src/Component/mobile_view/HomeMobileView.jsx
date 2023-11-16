@@ -5,8 +5,12 @@ import liveAppData from "@/models/projectData/liveAppsData";
 import { IoCall } from "react-icons/io5";
 import { MdOutlineContentCopy, MdEmail } from "react-icons/md";
 import { TypeAnimation } from "react-type-animation";
+import useClipboard from "react-use-clipboard";
 
 const HomeMobileView = () => {
+  const [isPhoneNumCopied, setPhoneNumCopied] = useClipboard("8942998873");
+  const [isEmailCopied, setEmailCopied] = useClipboard("mdsomad10@gmail.com");
+
   return (
     <div className={HomeMobileViewCss.mainDiv}>
       <img
@@ -161,7 +165,10 @@ const HomeMobileView = () => {
       >
         <IoCall className={HomeMobileViewCss.callIcon} />
         <h6 className={HomeMobileViewCss.phoneNumberText}>91+ 8942998873</h6>
-        <MdOutlineContentCopy className={HomeMobileViewCss.copyIcon} />
+        <MdOutlineContentCopy
+          onClick={setPhoneNumCopied}
+          className={HomeMobileViewCss.copyIcon}
+        />
       </div>
 
       <div
@@ -176,7 +183,10 @@ const HomeMobileView = () => {
       >
         <MdEmail className={HomeMobileViewCss.emailIcon} />
         <h6 className={HomeMobileViewCss.phoneNumberText}>mdsomad@gmail.com</h6>
-        <MdOutlineContentCopy className={HomeMobileViewCss.copyMailIcon} />
+        <MdOutlineContentCopy
+          onClick={setEmailCopied}
+          className={HomeMobileViewCss.copyMailIcon}
+        />
       </div>
     </div>
   );
