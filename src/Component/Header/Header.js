@@ -3,16 +3,12 @@ import "../Header/Header.css";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
-import NotSelectedButton from "./NotSelectedButton";
-import SelectedButton from "./SelectedButton";
-import { usePathname, useSearchParams } from 'next/navigation'
-
+import { usePathname, useSearchParams } from "next/navigation";
 
 const Header = () => {
   const [currentPage, setCurrentPage] = useState("");
-  const pathname = usePathname()
+  const pathname = usePathname();
 
-  
   useEffect(() => {
     setCurrentPage(pathname);
     // console.log("call useEffect");
@@ -34,49 +30,46 @@ const Header = () => {
           Portfolio.
         </h4>
 
-        <div
-          className={"navigationButtonContainer"}
-          // className="flex gap-8"
-        >
+        <div className={"navigationButtonContainer"}>
           <Link
             href="/"
-            // onClick={() => setCurrentPage(pathname)}
+            className={
+              currentPage == "/" || currentPage == "/home"
+                ? "SelectedLinkTagStyle"
+                : "NotSelectedLinkTagStyle"
+            }
           >
-            {currentPage == "/" || currentPage == "/home" ? (
-              <SelectedButton name={"Home"} />
-            ) : (
-              <NotSelectedButton name={"Home"} />
-            )}
+            <h6>Home</h6>
           </Link>
           <Link
             href="/skills/languages"
-            //  onClick={() => setCurrentPage(pathname)}
+            className={
+              currentPage.includes("/skills")
+                ? "SelectedLinkTagStyle"
+                : "NotSelectedLinkTagStyle"
+            }
           >
-            {currentPage.includes("/skills") ? (
-              <SelectedButton name={"Skills"} />
-            ) : (
-              <NotSelectedButton name={"Skills"} />
-            )}
+            <h6>Skills</h6>
           </Link>
           <Link
             href="/projects/frontendprojects"
-            //  onClick={() => setCurrentPage(pathname)}
+            className={
+              currentPage.includes("/projects")
+                ? "SelectedLinkTagStyle"
+                : "NotSelectedLinkTagStyle"
+            }
           >
-            {currentPage.includes("/projects") ? (
-              <SelectedButton name={"Projects"} />
-            ) : (
-              <NotSelectedButton name={"Projects"} />
-            )}
+            <h6>Projects</h6>
           </Link>
           <Link
             href="/crew"
-            //  onClick={() => setCurrentPage(pathname)}
+            className={
+              currentPage == "/crew"
+                ? "SelectedLinkTagStyle"
+                : "NotSelectedLinkTagStyle"
+            }
           >
-            {currentPage == "/crew" ? (
-              <SelectedButton name={"Crew"} />
-            ) : (
-              <NotSelectedButton name={"Crew"} />
-            )}
+            <h6>Crew</h6>
           </Link>
         </div>
       </div>
