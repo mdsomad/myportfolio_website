@@ -4,6 +4,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { usePathname, useSearchParams } from "next/navigation";
+import MobileNav from "../mobile-nav/mobile-nav.component";
 
 const Header = () => {
   const [currentPage, setCurrentPage] = useState("");
@@ -75,9 +76,11 @@ const Header = () => {
       </div>
       {/* HeaderMobile Code*/}
       <div className="HeaderMobile">
-        <RxHamburgerMenu
-          style={{ color: "white", marginLeft: "6vw", fontSize: "5vw" }}
-        />
+
+
+<MobileNav/>
+
+       
         <div className="gap:1"></div>
 
         <h4
