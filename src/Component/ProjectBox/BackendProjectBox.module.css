@@ -18,11 +18,20 @@
   height: 100%; 
   padding-left: 3vw;
   /* width: 100px; */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
   /* background-color: greenyellow; */
 }
 
 .sourceCodeLinkDiv{
+  display: flex;
+  flex-direction: column;
+  /* background-color: palevioletred; */
+  align-items: start;
 width: 60vw;
+
 }
 .nameText {
   font-size: 1.8vw;
@@ -46,6 +55,7 @@ width: 60vw;
   margin-top: 10px;
   font-weight: 400;
   text-overflow: ellipsis;
+  overflow: auto;
   flex-wrap: nowrap;
   /* white-space: nowrap;  */
   margin-top: 2vw;
