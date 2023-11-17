@@ -10,8 +10,8 @@ const frameworks = () => {
     <>
       <SkillNavigationBar />
       <div className={FrameworksCss.desktopViewContainer}>
-        {frameworksData.map((skill) => (
-          <SkillsBox languagesData={skill} />
+        {frameworksData.map((skill,index) => (
+          <SkillsBox key={index} languagesData={skill} />
         ))}
       </div>
       <div className={FrameworksCss.mobileAndTabletVewContainer}>

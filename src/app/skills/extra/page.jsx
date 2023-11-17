@@ -10,8 +10,8 @@ const extra = () => {
     <>
       <SkillNavigationBar />
       <div className={ExtraCss.desktopViewContainer}>
-        {extraData.map((skill) => (
-          <SkillsBox languagesData={skill} />
+        {extraData.map((skill,index) => (
+          <SkillsBox key={index} languagesData={skill} />
         ))}
       </div>
       <div className={ExtraCss.mobileAndTabletVewContainer}>

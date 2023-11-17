@@ -1,6 +1,6 @@
+"use client";
 import React from "react";
 import LiveAppBoxCss from "./LiveAppBox.module.css";
-import { AiFillGithub } from "react-icons/ai";
 
 const LiveAppBox = (props) => {
   return (

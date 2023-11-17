@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import BackendProjectBoxCss from "../ProjectBox/BackendProjectBox.module.css";
 

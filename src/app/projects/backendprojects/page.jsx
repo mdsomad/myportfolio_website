@@ -1,3 +1,4 @@
+"use client";
 import MobileBackendProjectBox from "@/Component/ProjectBox/MobileBackendProjectBox";
 import "./backendprojects.css";
 import BackendProjectBox from "@/Component/ProjectBox/BackendProjectBox";
@@ -10,20 +11,20 @@ const backendprojects = () => {
     <div>
       <ProjectsnavigationBar />
       <div className="mobileView">
-      {backendProjectData.map((data) => {
+      {backendProjectData.map((data,index) => {
           return (
-            <MobileBackendProjectBox backendProjectData={data} />
+            <MobileBackendProjectBox key={index} backendProjectData={data} />
           );
         })}
         
       </div>
 
       <div className="Container">
-        {backendProjectData.map((data) => {
+        {backendProjectData.map((data,index) => {
           return (
             //   <h1>{data.appName}</h1>
             //   <BackendProjectBox/>
-            <BackendProjectBox backendProjectData={data} />
+            <BackendProjectBox key={index} backendProjectData={data} />
           );
         })}
       </div>

@@ -10,8 +10,8 @@ const liveApps = () => {
     <>
       <ProjectsnavigationBar />
       <div className="VewContainer">
-        {liveAppData.map((data) => (
-          <LiveAppBox liveAppData={data} />
+        {liveAppData.map((data,index) => (
+          <LiveAppBox key={index} liveAppData={data} />
         ))}
       </div>
     </>

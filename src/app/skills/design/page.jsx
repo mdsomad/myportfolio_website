@@ -10,8 +10,8 @@ const design = () => {
     <>
       <SkillNavigationBar />
       <div className={DesignCss.desktopViewContainer}>
-        {designData.map((skill) => (
-          <SkillsBox languagesData={skill} />
+        {designData.map((skill,index) => (
+          <SkillsBox key={index} languagesData={skill} />
         ))}
       </div>
       <div className={DesignCss.mobileAndTabletVewContainer}>

@@ -17,13 +17,15 @@
   display: flex;
   overflow: auto;
   overflow-y: hidden;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  gap: 2vw;
 }
 
 .screenshotBox {
   height: 100%;
   width: 50vw;
   /* background-color: blue; */
-  margin: 1.5vw;
 }
 
 .detailsContainer {

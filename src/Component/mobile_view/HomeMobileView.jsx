@@ -9,7 +9,7 @@ import useClipboard from "react-use-clipboard";
 
 const HomeMobileView = () => {
   const [isPhoneNumCopied, setPhoneNumCopied] = useClipboard("8942998873");
-  const [isEmailCopied, setEmailCopied] = useClipboard("mdsomad10@gmail.com");
+  const [isEmailCopied, setEmailCopied] = useClipboard("k41594176@gmail.com");
 
   return (
     <div className={HomeMobileViewCss.mainDiv}>
@@ -182,7 +182,7 @@ const HomeMobileView = () => {
         }}
       >
         <MdEmail className={HomeMobileViewCss.emailIcon} />
-        <h6 className={HomeMobileViewCss.phoneNumberText}>mdsomad@gmail.com</h6>
+        <h6 className={HomeMobileViewCss.phoneNumberText}>k41594176@gmail.com</h6>
         <MdOutlineContentCopy
           onClick={setEmailCopied}
           className={HomeMobileViewCss.copyMailIcon}

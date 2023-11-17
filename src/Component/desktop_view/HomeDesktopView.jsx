@@ -88,7 +88,7 @@ const HomeDesktopView = () => {
         <div className={HomeDesktopViewCss.contactDetailsContainer}>
           <MdEmail className={HomeDesktopViewCss.emailIcon} />
           <h6 className={HomeDesktopViewCss.phoneNumberText}>
-            mdsomad@gmail.com
+            k41594176@gmail.com
           </h6>
           {/* <MdOutlineContentCopy className={HomeDesktopViewCss.copyMailIcon} /> */}
         </div>

@@ -1,3 +1,4 @@
+"use client";
 import MobileBackendProjectBoxCss from "./MobileBackendProjectBox.module.css";
 import React from "react";
 import { AiFillGithub } from "react-icons/ai";

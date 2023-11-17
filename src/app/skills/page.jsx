@@ -37,8 +37,8 @@ const skills = () => {
     <>
       <SkillNavigationBar />
       <div className="desktopViewContainer">
-        {languagesData.map((skill) => (
-          <SkillsBox languagesData={skill} />
+        {languagesData.map((skill,index) => (
+          <SkillsBox key={index} languagesData={skill} />
         ))}
       </div>
       <div className="mobileAndTabletVewContainer">

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import "./frontendProjects.css";
 import FrontendBox from "@/Component/ProjectBox/FrontendBox";
@@ -10,14 +11,14 @@ const frontendprojects = () => {
     <div>
       <ProjectsnavigationBar />
       <div className="desktopViewContainer">
-        {frontendProjectData.map((data) => (
-          <FrontendBox frontendProjectData={data} />
+        {frontendProjectData.map((data,index) => (
+          <FrontendBox key={index} frontendProjectData={data} />
         ))}
       </div>
 
       <div className="mobileAndTabletVewContainer">
-        {frontendProjectData.map((data) => (
-          <FrontendProjectMobileView frontendProjectData={data} />
+        {frontendProjectData.map((data,index) => (
+          <FrontendProjectMobileView key={index} frontendProjectData={data} />
         ))}
       </div>
     </div>

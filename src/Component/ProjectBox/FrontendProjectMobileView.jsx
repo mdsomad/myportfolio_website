@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import FrontendProjectMobileViewCss from "../ProjectBox/FrontendProjectMobileView.module.css";
 import { AiFillGithub } from "react-icons/ai";
@@ -9,7 +10,7 @@ const FrontendProjectMobileView = (props) => {
       <div className={FrontendProjectMobileViewCss.screenshotsContainer}>
         {props.frontendProjectData.screenshots.map((data, index) => {
           return (
-            <img
+            <img key={index}
               className={FrontendProjectMobileViewCss.screenshotBox}
               src={data}
               alt=""

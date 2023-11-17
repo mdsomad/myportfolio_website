@@ -1,3 +1,4 @@
+"use client";
 import "../SkillsBox/SkillsBox.css";
 import React from "react";
 import ProgressBarLabels from "./ProgressBarLabels";

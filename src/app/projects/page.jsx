@@ -17,8 +17,8 @@ const skillTypeTabs = ["FrontendProjects", "BackendProjects", "LiveApps"];
 const FrontEndProjects = () => {
   return (
     <div className="px-4 pl-10 flex flex-wrap gap-10">
-      {frameworkProjectData.map((skill) => (
-        <FrontendBox {...skill} />
+      {frameworkProjectData.map((skill,index) => (
+        <FrontendBox key={index} {...skill} />
       ))}
     </div>
   );
@@ -63,14 +63,14 @@ const projects = () => {
       
       <ProjectsnavigationBar />
       <div className="desktopViewContainer">
-        {frameworkProjectData.map((data) => (
-          <FrontendBox frontendProjectData={data} />
+        {frameworkProjectData.map((data,index) => (
+          <FrontendBox key={index} frontendProjectData={data} />
         ))}
       </div>
 
       <div className="mobileAndTabletVewContainer">
-        {frontendProjectData.map((data) => (
-          <FrontendProjectMobileView frontendProjectData={data} />
+        {frontendProjectData.map((data,index) => (
+          <FrontendProjectMobileView key={index} frontendProjectData={data} />
         ))}
       </div>
     </>

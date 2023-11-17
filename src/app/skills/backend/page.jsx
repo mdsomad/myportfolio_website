@@ -11,8 +11,8 @@ const backend = () => {
     <>
       <SkillNavigationBar />
       <div className={BackendCss.desktopViewContainer}>
-        {backendData.map((skill) => (
-          <SkillsBox languagesData={skill} />
+        {backendData.map((skill,index) => (
+          <SkillsBox key={index} languagesData={skill} />
         ))}
       </div>
       <div className={BackendCss.mobileAndTabletVewContainer}>
