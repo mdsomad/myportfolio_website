@@ -16,8 +16,7 @@ const crew = () => {
               <h1 className="nameTag">Name : {data.name}</h1>
               <h1 className="roleTag">Role : {data.role}</h1>
               <div style={{ display: "flex" }}>
-                <h1 className="websiteLinkTextTag">Website Link :</h1>
-                <h1 className="linkTag"> {data.websiteLink}</h1>
+                <h1 className="websiteLinkTextTag">Website Link : <span style={{color:"cornflowerblue"}}>{data.websiteLink}</span></h1>
               </div>
             </div>
             <div style={{ display: "flex", flexGrow: "1" }}></div>
