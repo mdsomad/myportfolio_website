@@ -35,7 +35,7 @@ const ProjectsnavigationBar = () => {
             : ProjectsnavigationBarCss.linkTag
         }
       >
-        Backend projects
+        Backend Projects
       </Link>
       <Link
         href="/projects/liveapps"

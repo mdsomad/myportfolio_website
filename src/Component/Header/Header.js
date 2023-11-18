@@ -81,7 +81,7 @@ const Header = () => {
 <MobileNav/>
 
        
-        <div className="gap:1"></div>
+        {/* <div className="gap:1"></div>
 
         <h4
           style={{
@@ -92,7 +92,7 @@ const Header = () => {
           }}
         >
           Portfolio.
-        </h4>
+        </h4> */}
 
         {/* <div
           style={{ display: "flex", gap: "10" }}

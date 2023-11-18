@@ -97,7 +97,7 @@ const HomeDesktopView = () => {
       <div className={HomeDesktopViewCss.AvatarContainer}>
         <img
           className={HomeDesktopViewCss.AvatarTag}
-          src="./images/profile-image.jpg"
+          src="./profile_image/profile_images.jpg"
         />
         <p
           style={{

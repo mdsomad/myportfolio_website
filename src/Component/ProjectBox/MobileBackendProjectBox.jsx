@@ -1,6 +1,6 @@
 "use client";
-import MobileBackendProjectBoxCss from "./MobileBackendProjectBox.module.css";
 import React from "react";
+import MobileBackendProjectBoxCss from "./MobileBackendProjectBox.module.css";
 import { AiFillGithub } from "react-icons/ai";
 
 const MobileBackendProjectBox = (props) => {
@@ -17,7 +17,7 @@ const MobileBackendProjectBox = (props) => {
           <h6 className={MobileBackendProjectBoxCss.text3}>
             Source Code Link :
             <span style={{ color: "#589bff", marginLeft: "0.5vw" }}>
-            {props.backendProjectData.sourceCodeLink}
+              {props.backendProjectData.sourceCodeLink}
             </span>
           </h6>
         </div>
@@ -25,7 +25,7 @@ const MobileBackendProjectBox = (props) => {
       <div className={MobileBackendProjectBoxCss.buttonAndLogoParentContainer}>
         <img
           className={MobileBackendProjectBoxCss.frameworkLogo}
-          src= {props.backendProjectData.frameworkLogo}
+          src={props.backendProjectData.frameworkLogo}
           alt=""
         />
         <a

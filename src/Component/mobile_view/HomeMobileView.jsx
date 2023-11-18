@@ -15,7 +15,7 @@ const HomeMobileView = () => {
     <div className={HomeMobileViewCss.mainDiv}>
       <img
         className={HomeMobileViewCss.AvatarTag}
-        src="./images/profile-image.jpg"
+        src="./profile_image/profile_images.jpg"
         alt="Avatar"
       />
 

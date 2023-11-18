@@ -34,7 +34,7 @@ const FrontendProjectMobileView = (props) => {
             className={FrontendProjectMobileViewCss.projectSourceCodeLinkText}
           >
             Source Code Link :
-            <span style={{ color: "#589bff", fontWeight: "300" }}>
+            <span style={{ color: "#589bff", fontWeight: "300",marginLeft:"1vw" }}>
               {props.frontendProjectData.sourceCodeLink}
             </span>
           </h6>

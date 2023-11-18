@@ -112,6 +112,46 @@ const frontendProjectData = [
     isYoutube: false,
     demoVideoLink: "",
   },
+  {
+    appName: "Youtube Clone UI",
+    screenshots: [
+      "/screenshots/youtube_clone/250526070-9f71d52d-6045-43ac-839c-96a31dade749.png",
+      "/screenshots/youtube_clone/250526094-3aeeaa2c-8028-412c-a45f-39ea92ce6e0f.png",
+      "/screenshots/youtube_clone/250526133-39a0611e-1da1-4af3-b9d7-dfa6961579d3.png",
+    ],
+    sourceCodeLink: "https://github.com/mdsomad/flutter_app_ui_designs/tree/Youtube_Ui_Clone",
+    frameworkName: "Flutter",
+    frameworkLogo: "/images/flutter.svg",
+    isYoutube: false,
+    demoVideoLink: "",
+  },
+  {
+    appName: "Smart Home UI",
+    screenshots: [
+      "/screenshots/smart_home_ui/276222301-b8ff623c-264a-426f-8e40-9e1f94b44198.png",
+      "/screenshots/smart_home_ui/276222342-e3ae579d-9c05-47d5-8c73-25a5b3014ed3.png",
+      "/screenshots/smart_home_ui/276222362-0f92f061-5454-4b2a-b572-70908e2a9d86.png",
+      "/screenshots/smart_home_ui/276222380-96454df6-dd52-4be0-a78b-6ed6fc7ff2fd.png",
+    ],
+    sourceCodeLink: "https://github.com/mdsomad/flutter_app_ui_designs/tree/Smart_Home_UI",
+    frameworkName: "Flutter",
+    frameworkLogo: "/images/flutter.svg",
+    isYoutube: false,
+    demoVideoLink: "",
+  },
+  {
+    appName: "Cloud Files Storage UI",
+    screenshots: [
+      "/screenshots/cloud_files_storage/231438778-981d5452-6dfc-4bf1-b4b7-e3cfbdb28d20.jpg",
+      "/screenshots/cloud_files_storage/231439030-220299a8-f07a-4653-88b7-076f1d019f5d.jpg",
+      "/screenshots/cloud_files_storage/231439526-c6da58cc-c0f5-4add-ab5e-2ca0b1a90a62.jpg",
+    ],
+    sourceCodeLink: "https://github.com/mdsomad/flutter_app_ui_designs/tree/cloud_storage_ui",
+    frameworkName: "Flutter",
+    frameworkLogo: "/images/flutter.svg",
+    isYoutube: false,
+    demoVideoLink: "",
+  },
 
 
 ];

@@ -33,9 +33,23 @@ export default function MobileNav() {
       <div className={styles.header_navigation}>
         <button className={styles.button} onClick={toggleSideNavState}>
           <RxHamburgerMenu
-            style={{ color: "white", marginLeft: "6vw", fontSize: "6vw" }}
+            style={{ color: "white", fontSize: "6vw" }}
           />
         </button>
+
+        <div className="gap:1"></div>
+
+        <h4
+          style={{
+            color: "#01EEFE",
+            paddingRight: "3vw",
+            fontSize: "5vw",
+            fontWeight: "bold",
+          }}
+        >
+          Portfolio.
+        </h4>
+        
       </div>
 
       <nav
