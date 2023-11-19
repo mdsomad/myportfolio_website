@@ -124,3 +124,62 @@
   font-size: 5vw;
   margin-left: 10vw;
 }
+
+
+
+
+
+
+/** tableteView size */
+@media (max-width: 850px) {
+  
+.youtube_facebook_parent_container{
+  display: flex;
+  justify-Content:start;
+  align-Items: center;
+  width: 100%;
+  margin-Bottom: 5vw;
+  padding-Left:6vw;
+  gap:12.8vw;
+  /* background-color: pink; */
+ 
+}
+.youtube_logo_img{
+  width: 12vw;
+  height: 12vw;
+ 
+ }
+ .facebook_logo_img{
+   width: 10vw;
+   height: 10vw;
+ }
+ 
+
+}
+
+
+
+/** tableteView size */
+@media (max-width: 480px) {
+.youtube_facebook_parent_container{
+  display: flex;
+  justify-Content:start;
+  align-Items: center;
+  width: 100%;
+  margin-Bottom: 5vw;
+  padding-Left:6vw;
+  gap:12.8vw;
+  /* background-color: greenyellow; */
+}
+
+.youtube_logo_img{
+ width: 12vw;
+ height: 12vw;
+
+}
+.facebook_logo_img{
+  width: 10vw;
+  height: 10vw;
+}
+
+}

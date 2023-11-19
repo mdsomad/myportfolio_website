@@ -40,7 +40,8 @@ const HomeDesktopView = () => {
         <div
           style={{
             display: "flex",
-            gap: "2.5vw",
+            gap:"1.7vw",
+            alignItems:"center",
             // justifyContent: "space-between",
             // width: "18vw",
           }}
@@ -75,7 +76,21 @@ const HomeDesktopView = () => {
             href="https://www.linkedin.com/in/md-somad-8827ab256"
             rel="noopener noreferrer"
           >
-            <img src="./images/icons-linkedin.svg" width="50vw" height="50vw" />
+            <img src="./images/icons-linkedin.svg" width="42vw" height="42vw" />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.youtube.com/@Oscar-hk9gq"
+            rel="noopener noreferrer"
+          >
+            <img src="./images/youtube.png" width="50vw" height="50vw" />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/people/Md-Somad/pfbid02iXtGuZJuui1FuJaw7cq47EYAqF5TATuDndXDQUg2hLuiiDdyzja4aZJ2eQLUt4KMl/?mibextid=ZbWKwL"
+            rel="noopener noreferrer"
+          >
+            <img src="./images/facebook-color-svgrepo-com.svg" width="40vw" height="40vw" />
           </a>
         </div>
 

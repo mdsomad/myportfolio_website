@@ -95,6 +95,28 @@ const HomeMobileView = () => {
           />
         </a>
       </div>
+      <div
+      className={HomeMobileViewCss.youtube_facebook_parent_container}
+       
+      >
+        <a
+          target="_blank"
+          href="https://www.youtube.com/@Oscar-hk9gq"
+          rel="noopener noreferrer"
+        >
+          <img className={HomeMobileViewCss.youtube_logo_img} src="./images/youtube.png"/>
+        </a>
+        <a
+          target="_blank"
+          href="https://www.facebook.com/people/Md-Somad/pfbid02iXtGuZJuui1FuJaw7cq47EYAqF5TATuDndXDQUg2hLuiiDdyzja4aZJ2eQLUt4KMl/?mibextid=ZbWKwL"
+          rel="noopener noreferrer"
+        >
+          <img
+           className={HomeMobileViewCss.facebook_logo_img}
+            src="./images/facebook-color-svgrepo-com.svg"
+          />
+        </a>
+      </div>
 
       <div
         style={{
@@ -182,7 +204,9 @@ const HomeMobileView = () => {
         }}
       >
         <MdEmail className={HomeMobileViewCss.emailIcon} />
-        <h6 className={HomeMobileViewCss.phoneNumberText}>k41594176@gmail.com</h6>
+        <h6 className={HomeMobileViewCss.phoneNumberText}>
+          k41594176@gmail.com
+        </h6>
         <MdOutlineContentCopy
           onClick={setEmailCopied}
           className={HomeMobileViewCss.copyMailIcon}
