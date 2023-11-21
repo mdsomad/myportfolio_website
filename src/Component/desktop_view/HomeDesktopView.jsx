@@ -83,7 +83,7 @@ const HomeDesktopView = () => {
             href="https://www.youtube.com/@Oscar-hk9gq"
             rel="noopener noreferrer"
           >
-            <img src="./images/youtube.png" width="50vw" height="50vw" />
+            <img src="./images/youtube-svglogo.svg" width="50vw" height="50vw" />
           </a>
           <a
             target="_blank"

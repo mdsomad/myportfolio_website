@@ -4,6 +4,7 @@ import { Button } from "@material-tailwind/react";
 import liveAppData from "@/models/projectData/liveAppsData";
 import { IoCall } from "react-icons/io5";
 import { MdOutlineContentCopy, MdEmail } from "react-icons/md";
+import { PiLinkSimpleBold } from "react-icons/pi";
 import { TypeAnimation } from "react-type-animation";
 import useClipboard from "react-use-clipboard";
 
@@ -45,6 +46,61 @@ const HomeMobileView = () => {
         I've app development experience of over 2+ Years. <br />
         And programming experience of 3 years.
       </p>
+
+      <div className={HomeMobileViewCss.playStoreLogoAndliveAppTextParentContainer}>
+        <a
+          target="_blank"
+          href="https://play.google.com/store/apps/dev?id=6634717439171184150"
+          rel="noopener noreferrer"
+        >
+          <img
+            className={HomeMobileViewCss.playStoreLogo}
+            src="./images/Google_Play-Icon.svg"
+            alt="Google Play Store"
+          />
+        </a>
+        <h6 className={HomeMobileViewCss.liveAppText}>Live Apps</h6>
+      </div>
+
+      {liveAppData.map((data) => (
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "start",
+            alignItems: "center",
+            width: "100%",
+            height: "13vw",
+            marginBottom: "1.5vw",
+            paddingRight: "5vw",
+            // backgroundColor:"red"
+          }}
+        >
+          <img
+            className={HomeMobileViewCss.liveApplogo}
+            src={data.appLogo}
+            alt="App Icon"
+          />
+          <h6 className={HomeMobileViewCss.appNameText}>
+            Name : {data.appName}
+          </h6>
+          <div style={{ display: "flex", flexGrow: "1" }}></div>
+
+          <a
+            target="_blank"
+            href={data.googlePlayStoreLink}
+            rel="noopener noreferrer"
+          >
+            <Button className={HomeMobileViewCss.appInstallButton}>
+              Install Now
+            </Button>
+          </a>
+        </div>
+      ))}
+
+      <div className={HomeMobileViewCss.linkIconAndSocialMediaParentContainer}>
+        <PiLinkSimpleBold className={HomeMobileViewCss.linkIconStyle} />{" "}
+        <h6 className={HomeMobileViewCss.socialMediaTextStyle}>Socal Media</h6>
+      </div>
 
       <div
         style={{
@@ -95,16 +151,16 @@ const HomeMobileView = () => {
           />
         </a>
       </div>
-      <div
-      className={HomeMobileViewCss.youtube_facebook_parent_container}
-       
-      >
+      <div className={HomeMobileViewCss.youtube_facebook_parent_container}>
         <a
           target="_blank"
           href="https://www.youtube.com/@Oscar-hk9gq"
           rel="noopener noreferrer"
         >
-          <img className={HomeMobileViewCss.youtube_logo_img} src="./images/youtube.png"/>
+          <img
+            className={HomeMobileViewCss.youtube_logo_img}
+            src="./images/youtube-svglogo.svg"
+          />
         </a>
         <a
           target="_blank"
@@ -112,68 +168,11 @@ const HomeMobileView = () => {
           rel="noopener noreferrer"
         >
           <img
-           className={HomeMobileViewCss.facebook_logo_img}
+            className={HomeMobileViewCss.facebook_logo_img}
             src="./images/facebook-color-svgrepo-com.svg"
           />
         </a>
       </div>
-
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "start",
-          alignItems: "center",
-          width: "100%",
-        }}
-      >
-        <a
-          target="_blank"
-          href="https://play.google.com/store/apps/dev?id=6634717439171184150"
-          rel="noopener noreferrer"
-        >
-          <img
-            className={HomeMobileViewCss.playStoreLogo}
-            src="./images/google-play-store.png"
-            alt="Google Play Store"
-          />
-        </a>
-        <h6 className={HomeMobileViewCss.liveAppText}>Live Apps</h6>
-      </div>
-
-      <div className={HomeMobileViewCss.divider}></div>
-
-      {liveAppData.map((data) => (
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "start",
-            alignItems: "center",
-            width: "100%",
-            marginBottom: "5vw",
-            paddingRight: "5vw",
-          }}
-        >
-          <img
-            className={HomeMobileViewCss.liveApplogo}
-            src={data.appLogo}
-            alt="App Icon"
-          />
-          <h6 className={HomeMobileViewCss.appNameText}>
-            Name : {data.appName}
-          </h6>
-          <div style={{ display: "flex", flexGrow: "1" }}></div>
-
-          <a
-            target="_blank"
-            href={data.googlePlayStoreLink}
-            rel="noopener noreferrer"
-          >
-            <Button className={HomeMobileViewCss.appInstallButton}>
-              Install Now
-            </Button>
-          </a>
-        </div>
-      ))}
 
       <div
         style={{

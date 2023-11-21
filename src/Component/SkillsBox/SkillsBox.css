@@ -2,7 +2,7 @@
   display: flex;
   height: 6.3vw;
   width: 14vw;
-  background-color: #1f1e1e;
+  background-color: var(--SkillsBoxColor);
   border-top-left-radius: 1.5vw;
   border-bottom-right-radius: 1.5vw;
   align-items: center;

@@ -11,7 +11,7 @@ const MobileProgressBarLabels = ({ Progress }) => {
           width: `${Progress}%`,
           // width: `80%`,
           borderRadius: "3vw",
-          backgroundColor: "#01EEFE",
+          backgroundColor: "var(--Cyan)",
         }}
       ></div>
     </div>

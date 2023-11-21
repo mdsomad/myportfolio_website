@@ -11,10 +11,10 @@
   border-radius: 50%;
   /* object-fit: cover; */
   margin-top: 7vw;
-  box-shadow: 0px 1px 2px 0px rgba(0, 255, 255, 0.7),
-    1px 2px 4px 0px rgba(0, 255, 255, 0.7),
-    2px 8px 16px 0px rgba(0, 255, 255, 0.7),
-    2px 8px 20px 0px rgba(0, 255, 255, 0.7);
+  box-shadow: 0px 1px 2px 0px var(--AvatarTagShadowColor),
+    1px 2px 4px 0px var(--AvatarTagShadowColor),
+    2px 8px 16px 0px var(--AvatarTagShadowColor),
+    2px 8px 20px 0px var(--AvatarTagShadowColor);
 }
 
 .h5Tag {
@@ -26,7 +26,7 @@
 
 .nameTag {
   font-size: 11vw;
-  color: #01eefe;
+  color: var(--Cyan);
   font-weight: 700;
 }
 .h1Tag {
@@ -37,7 +37,7 @@
 
 .developerTag {
   font-size: 5.5vw;
-  color: #01eefe;
+  color: var(--Cyan);
   font-weight: 700;
 }
 
@@ -54,25 +54,27 @@
 }
 
 .playStoreLogo {
-  height: 10vw;
-  width: 10vw;
-  margin-left: 7vw;
+  height: 12vw;
+  width: 12vw;
+  /* margin-left: 7vw; */
 }
-
+.playStoreLogoAndliveAppTextParentContainer{
+  display: flex;
+  height: 14vw;
+  width: 100%;
+  flex-Direction:row;
+  padding-left:7vw;
+  margin-Bottom:3vw;
+  gap:3vw;
+  justify-Content:start;
+  align-Items:center;
+  /* border-Top: 0.5vw solid var(--Cyan); */
+  border-Bottom: 0.5vw solid var(--Cyan);
+}
 .liveAppText {
   color: white;
   font-size: 6vw;
-  margin-left: 6vw;
   font-weight: 500;
-}
-
-.divider {
-  height: 0.8vw;
-  width: 95%;
-  margin-top: 4vw;
-  margin-bottom: 4vw;
-  /* background-color: white; */
-  background-color: #f8f8ff;
 }
 
 .liveApplogo {
@@ -83,14 +85,14 @@
 
 .appNameText {
   font-size: 3.5vw;
-  color: white;
+  color: var(--textColorWithe);
   margin-left: 2vw;
 }
 
 .appInstallButton {
   height: 9vw;
   width: 26vw;
-  background-color: #01eefe;
+  background-color: var(--Cyan);
   border-radius: 20px;
   color: #000000;
   font-size: 3vw;
@@ -98,13 +100,39 @@
   text-align: center;
 }
 
+.linkIconAndSocialMediaParentContainer{
+  display: flex;
+  height: 14vw;
+  width: 100%;
+  flex-Direction:row;
+  padding-left:7vw;
+  margin-Bottom:3vw;
+  gap:3vw;
+  justify-Content:start;
+  align-Items:center;
+  border-Top: 0.5vw solid var(--Cyan);
+  border-Bottom: 0.5vw solid var(--Cyan);
+}
+
+.linkIconStyle{
+  color: #00bfff;
+  font-size: 7.5vw;
+}
+.socialMediaTextStyle{
+  font-size: 6vw;
+  font-weight: 500;
+  color: var(--textColorWithe);
+}
+
+
+
 .callIcon {
   color: #3fff00;
   font-size: 8vw;
 }
 
 .phoneNumberText {
-  color: white;
+  color: var(--textColorWithe);
   font-size: 4.5vw;
   margin-left: 5vw;
 }
@@ -125,61 +153,47 @@
   margin-left: 10vw;
 }
 
-
-
-
-
-
 /** tableteView size */
 @media (max-width: 850px) {
-  
-.youtube_facebook_parent_container{
-  display: flex;
-  justify-Content:start;
-  align-Items: center;
-  width: 100%;
-  margin-Bottom: 5vw;
-  padding-Left:6vw;
-  gap:12.8vw;
-  /* background-color: pink; */
- 
+  .youtube_facebook_parent_container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5vw;
+    padding-left: 6vw;
+    gap: 12.8vw;
+    /* background-color: pink; */
+  }
+  .youtube_logo_img {
+    width: 12vw;
+    height: 12vw;
+  }
+  .facebook_logo_img {
+    width: 10vw;
+    height: 10vw;
+  }
 }
-.youtube_logo_img{
-  width: 12vw;
-  height: 12vw;
- 
- }
- .facebook_logo_img{
-   width: 10vw;
-   height: 10vw;
- }
- 
-
-}
-
-
 
 /** tableteView size */
 @media (max-width: 480px) {
-.youtube_facebook_parent_container{
-  display: flex;
-  justify-Content:start;
-  align-Items: center;
-  width: 100%;
-  margin-Bottom: 5vw;
-  padding-Left:6vw;
-  gap:12.8vw;
-  /* background-color: greenyellow; */
-}
+  .youtube_facebook_parent_container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5vw;
+    padding-left: 7vw;
+    gap: 14vw;
+    /* background-color: greenyellow; */
+  }
 
-.youtube_logo_img{
- width: 12vw;
- height: 12vw;
-
-}
-.facebook_logo_img{
-  width: 10vw;
-  height: 10vw;
-}
-
+  .youtube_logo_img {
+    width: 10vw;
+    height: 10vw;
+  }
+  .facebook_logo_img {
+    width: 9vw;
+    height:9vw;
+  }
 }

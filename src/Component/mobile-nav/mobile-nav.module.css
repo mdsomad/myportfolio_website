@@ -19,7 +19,7 @@
   position: absolute;
   width: clamp(100px, 60vw, 400px);
   height: max(100vh, 100%);
-  background-color: #1b1b1b;
+  background-color: var(--SkillsBoxColor);
   /* background-color: yellow; */
   transform: translateX(-400px);
   transition: transform 500ms;
@@ -49,7 +49,7 @@
 }
 
 .side_nav_close_icons {
-  color: #01eefe;
+  color: var(--Cyan);
   font-size: 8vw;
 }
 .link_buttons_parent_container {
@@ -66,7 +66,7 @@
   left: 15.5vw;
   text-align: center;
   justify-self: center;
-  color: #01eefe;
+  color: var(--Cyan);;
   background-color: #20242d;
   border-radius: 6vw;
   align-items: center;
@@ -89,5 +89,5 @@
   font-size: 3.8vw;
   text-align: center;
   padding-top: 1.2vw;
-  background-color: #01eefe;
+  background-color:var(--Cyan);
 }

@@ -10,7 +10,7 @@
 }
 
 .skillItem {
-  background-color: #1b1b1b;
+  background-color: var(--SkillsBoxColor);
   border-top-left-radius: 4vw;
   border-bottom-right-radius: 4vw;
   display: flex;
@@ -33,7 +33,7 @@
 }
 
 .nameText {
-  color: white;
+  color: var(--textColorWithe);
   font-size: 3vw;
   font-weight: 600;
 }
@@ -41,7 +41,7 @@
 .percentageNumberText {
   margin-top: 7vw;
   margin-left: 1.5vw;
-  color: white;
+  color: var(--textColorWithe);
   font-size: 3.3vw;
   font-weight: 500;
 }
@@ -60,7 +60,7 @@
   }
 
   .skillItem {
-    background-color: #1b1b1b;
+    background-color: var(--SkillsBoxColor);
     border-top-left-radius: 4vw;
     border-bottom-right-radius: 4vw;
     display: flex;
@@ -85,7 +85,7 @@
   }
 
   .nameText {
-    color: white;
+    color: var(--textColorWithe);
     font-size: 2vw;
     font-weight: 600;
   }
@@ -93,7 +93,7 @@
   .percentageNumberText {
     margin-top: 3.5vw;
     margin-left: 1.5vw;
-    color: white;
+    color: var(--textColorWithe);
     font-size: 2vw;
     font-weight: 500;
   }

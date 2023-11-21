@@ -10,7 +10,7 @@ const ProgressBarLabels = ({ Progress }) => {
           height: "100%",
           width: `${Progress}%`,
           borderRadius: "1.5vw",
-          backgroundColor: "#01EEFE",
+          backgroundColor: "var(--Cyan)",
         }}
       ></div>
     </div>

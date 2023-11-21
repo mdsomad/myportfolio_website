@@ -82,7 +82,7 @@
 .ButtonContainer{
   height: 10vw;
   width: 30vw;
-  background-color: #01d7e6;
+  background-color: var(--Cyan);
   display: flex;
   justify-content: space-evenly;
   align-items: center;

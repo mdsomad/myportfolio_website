@@ -33,7 +33,7 @@ export default function MobileNav() {
       <div className={styles.header_navigation}>
         <button className={styles.button} onClick={toggleSideNavState}>
           <RxHamburgerMenu
-            style={{ color: "white", fontSize: "6vw" }}
+            style={{ color: "var(--textColorWithe)", fontSize: "6vw" }}
           />
         </button>
 
@@ -41,7 +41,7 @@ export default function MobileNav() {
 
         <h4
           style={{
-            color: "#01EEFE",
+            color: "var(--Cyan)",
             paddingRight: "3vw",
             fontSize: "5vw",
             fontWeight: "bold",
@@ -109,36 +109,6 @@ export default function MobileNav() {
               Crew
             </Link>
           </div>
-          {/* <Link
-            href="/skills/languages"
-            className={
-              currentPage.includes("/skills")
-                ? "SelectedLinkTagStyle"
-                : "NotSelectedLinkTagStyle"
-            }
-          >
-            <h6 className={styles.buttonTitle}>Skills</h6>
-          </Link>
-          <Link
-            href="/projects/frontendprojects"
-            className={
-              currentPage.includes("/projects")
-                ? "SelectedLinkTagStyle"
-                : "NotSelectedLinkTagStyle"
-            }
-          >
-            <h6 className={styles.buttonTitle}>Projects</h6>
-          </Link>
-          <Link
-            href="/crew"
-            className={
-              currentPage == "/crew"
-                ? "SelectedLinkTagStyle"
-                : "NotSelectedLinkTagStyle"
-            }
-          >
-            <h6 className={styles.buttonTitle}>Crew</h6>
-          </Link> */}
         </div>
       </nav>
     </>

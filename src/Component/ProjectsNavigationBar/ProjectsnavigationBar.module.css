@@ -10,12 +10,12 @@
   
   .linkTag {
     font-size: 1vw;
-    color: white;
+    color: var(--textColorWithe);;
     font-weight: 600;
   }
   .selectedlinkTag {
     font-size: 1vw;
-    color: #01eefe;
+    color: var(--Cyan);;
     font-weight: 600;
   }
   
@@ -33,12 +33,12 @@
     }
     .linkTag {
       font-size: 2.5vw;
-      color: white;
+      color: var(--textColorWithe);;
       font-weight: 600;
     }
     .selectedlinkTag {
       font-size: 2.5vw;
-      color: #01eefe;
+      color: var(--Cyan);;
       font-weight: 600;
     }
   }
@@ -57,12 +57,12 @@
     }
     .linkTag {
       font-size: 3.5vw;
-      color: white;
+      color: var(--textColorWithe);;
       font-weight: 600;
     }
     .selectedlinkTag {
       font-size: 3.5vw;
-      color: #01eefe;
+      color: var(--Cyan);;
       font-weight: 600;
     }
   }

@@ -1,6 +1,5 @@
 import React from "react";
 import SkillsMobileViewCss from "../mobile_view/SkillsMobileView.module.css";
-import ProgressBarLabels from "../SkillsBox/ProgressBarLabels";
 import MobileProgressBarLabels from "./MobileProgressBarLabels";
 
 const SkillsMobileView = (props) => {

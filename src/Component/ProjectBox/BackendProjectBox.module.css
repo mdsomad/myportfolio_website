@@ -32,21 +32,21 @@
 }
 .nameText {
   font-size: 1.8vw;
-  color: white;
+  color: var(--textColorWithe);;
   margin-top: 2vw;
   font-weight: 500;
 }
 
 .frameworkText {
   font-size: 1.5vw;
-  color: white;
+  color: var(--textColorWithe);;
   margin-top: 1vw;
   font-weight: 400;
 }
 
 .sourceCodeText {
   font-size: 25px;
-  color: white;
+  color:var(--textColorWithe);
   margin-top: 10px;
   font-weight: 400;
   /* text-overflow: ellipsis; */
@@ -76,7 +76,7 @@
 .buttonContainer {
   height: 2.3vw;
   width: 8vw;
-  background-color: #01d7e6;
+  background-color: var(--Cyan);;
   border-radius: 4vw;
   display: flex;
   justify-items: center;
@@ -132,21 +132,21 @@
   }
   .nameText {
     font-size: 3vw;
-    color: white;
+    color: var(--textColorWithe);;
     margin-top: 3vw;
     font-weight: 500;
   }
 
   .frameworkText {
     font-size: 2vw;
-    color: white;
+    color: var(--textColorWithe);;
     margin-top: 1vw;
     font-weight: 400;
   }
 
   .sourceCodeText {
     font-size: 2vw;
-    color: white;
+    color: var(--textColorWithe);;
     margin-top: 2vw;
     font-weight: 400;
     text-overflow: ellipsis;
@@ -175,7 +175,7 @@
   .buttonContainer {
     height: 4vw;
     width: 14vw;
-    background-color: #01d7e6;
+    background-color:var(--Cyan)    ;
     border-radius: 4vw;
     display: flex;
     justify-items: center;
@@ -224,21 +224,21 @@
   }
   .nameText {
     font-size: 3vw;
-    color: white;
+    color: var(--textColorWithe);;
     margin-top: 3vw;
     font-weight: 500;
   }
 
   .frameworkText {
     font-size: 2vw;
-    color: white;
+    color: var(--textColorWithe);;
     margin-top: 1vw;
     font-weight: 400;
   }
 
   .sourceCodeText {
     font-size: 2vw;
-    color: white;
+    color: var(--textColorWithe);;
     margin-top: 2vw;
     font-weight: 400;
     text-overflow: ellipsis;
@@ -267,7 +267,7 @@
   .buttonContainer {
     height: 4vw;
     width: 14vw;
-    background-color: #01d7e6;
+    background-color: var(--Cyan);;
     border-radius: 4vw;
     display: flex;
     justify-items: center;
@@ -310,21 +310,21 @@
 
   .nameText {
     font-size: 3vw;
-    color: white;
+    color: var(--textColorWithe);;
     margin-top: 3vw;
     font-weight: 500;
   }
 
   .frameworkText {
     font-size: 2vw;
-    color: white;
+    color: var(--textColorWithe);;
     margin-top: 2vw;
     font-weight: 400;
   }
 
   .sourceCodeText {
     font-size: 2vw;
-    color: white;
+    color: var(--textColorWithe);;
     margin-top: 2vw;
     font-weight: 400;
     text-overflow: ellipsis;
@@ -387,21 +387,21 @@
 
   .nameText {
     font-size: 3.5vw;
-    color: white;
+    color: var(--textColorWithe);;
     margin-top: 1vw;
     font-weight: 500;
   }
 
   .frameworkText {
     font-size: 3vw;
-    color: white;
+    color: var(--textColorWithe);;
     margin-top: 2vw;
     font-weight: 400;
   }
 
   .sourceCodeText {
     font-size: 3vw;
-    color: white;
+    color: var(--textColorWithe);;
     margin-top: 3vw;
     margin-bottom: 2vw;
     font-weight: 400;
@@ -432,7 +432,7 @@
   .buttonContainer {
     height: 5vw;
     width: 16vw;
-    background-color: #01d7e6;
+    background-color:var(--Cyan);;
     border-radius: 4vw;
     display: flex;
     justify-items: center;

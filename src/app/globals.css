@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --Cyan:#01EEFE;
+  --Black:#000000;
+  --mainBoxColor:#20242d;
+  --textColorWithe:#FFFFFF;
+  --SkillsBoxColor:#1b1b1b;
+  --mainBlack:rgba(0, 0, 0, 1);
+  --mainCyan:rgba(1, 214, 254, 1);
+  --AvatarTagShadowColor:rgba(0, 255, 255, 0.7);
+}
+
 a {
   text-decoration: none;
 }
@@ -17,8 +28,8 @@ a {
   background: rgb(0, 0, 0);
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 1) 48%,
-    rgba(1, 214, 254, 1) 71%
+    var(--mainBlack) 48%,
+    var(--mainCyan) 71%
   );
   height: 100vh;
   width: 100%;
@@ -29,7 +40,7 @@ a {
 .div {
   width: 96%;
   height: 93vh;
-  background-color: #20242d;
+  background-color: var(--mainBoxColor);
   /* background-color: red; */
   position: absolute;
   border-radius: 20px;
@@ -53,7 +64,7 @@ a {
   .div {
     width: 96%;
     height: 96vh;
-    background-color: #20242d;
+    background-color: var(--mainBoxColor);
     /* background-color: red; */
     /* position: absolute; */
     border-radius: 5vw;
@@ -70,7 +81,7 @@ a {
   .div {
     width: 96%;
     height: 96vh;
-    background-color: #20242d;
+    background-color: var(--mainBoxColor);
     /* background-color: red; */
     /* position: absolute; */
     border-radius: 5vw;

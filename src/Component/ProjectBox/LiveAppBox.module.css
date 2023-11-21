@@ -79,7 +79,7 @@
   align-items: center;
   height: 2vw;
   width: 7vw;
-  background-color: #01d7e6;
+  background-color: var(--Cyan);
   border-radius: 3vw;
   gap: 0.5vw;
   /* margin-bottom: 8vw; */
@@ -125,7 +125,7 @@
       .text1 {
         font-size: 2vw;
         font-weight: 700;
-        color: white;
+        color: var(--textColorWithe);
       }
       .descriptionTextParentContainer {
         height: 4vw;
@@ -136,7 +136,7 @@
       .descriptionText {
         font-size: 1vw;
         font-weight: 500;
-        color: white;
+        color: var(--textColorWithe);
       }
       .linkTextContainer {
         width: 100%;
@@ -146,7 +146,7 @@
       }
       .text3 {
         font-size: 1.8vw;
-        color: white;
+        color: var(--textColorWithe);
         /* text-overflow: ellipsis; */
         overflow: auto;
         white-space: nowrap;
@@ -176,7 +176,7 @@
         align-items: center;
         height: 3vw;
         width: 10vw;
-        background-color: #01d7e6;
+        background-color: var(--textColorWithe);
         border-radius: 3vw;
         gap: 0.5vw;
         margin-bottom: 8vw;
@@ -221,7 +221,7 @@
       .text1 {
         font-size: 3vw;
         font-weight: 700;
-        color: white;
+        color: var(--textColorWithe);
       }
       .descriptionTextParentContainer {
         height: 7vw;
@@ -232,7 +232,7 @@
       .descriptionText {
         font-size: 1.8vw;
         font-weight: 500;
-        color: white;
+        color: var(--textColorWithe);
       }
       .linkTextContainer {
         width: 100%;
@@ -242,7 +242,7 @@
       }
       .text3 {
         font-size: 2.8vw;
-        color: white;
+        color: var(--textColorWithe);
         /* text-overflow: ellipsis; */
         overflow: auto;
         white-space: nowrap;
@@ -271,7 +271,7 @@
         align-items: center;
         height: 4.8vw;
         width: 15vw;
-        background-color: #01d7e6;
+        background-color: var(--Cyan);
         border-radius: 3vw;
         gap: 0.5vw;
         margin-bottom: 8vw;
@@ -315,7 +315,7 @@
   .text1 {
     font-size: 3.5vw;
     font-weight: 700;
-    color: white;
+    color: var(--textColorWithe);;
   }
   .descriptionTextParentContainer {
     height: 8vw;
@@ -326,7 +326,7 @@
   .descriptionText {
     font-size: 2vw;
     font-weight: 500;
-    color: white;
+    color: var(--textColorWithe);
   }
   .linkTextContainer {
     width: 100%;
@@ -336,7 +336,7 @@
   }
   .text3 {
     font-size: 3.2vw;
-    color: white;
+    color: var(--textColorWithe);
     /* text-overflow: ellipsis; */
     overflow: auto;
     white-space: nowrap;
@@ -365,7 +365,7 @@
     align-items: center;
     height: 6vw;
     width: 18vw;
-    background-color: #01d7e6;
+    background-color:var(--Cyan);
     border-radius: 3vw;
     gap: 1vw;
     margin-bottom: 8vw;
