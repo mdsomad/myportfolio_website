@@ -162,6 +162,7 @@
         align-items: center;
         gap: 1.2vw;
         padding-top: 7vw;
+        padding-bottom: 8vw;
         /* padding-left: 8vw; */
       }
       .frameworkLogo {
@@ -176,10 +177,9 @@
         align-items: center;
         height: 3vw;
         width: 10vw;
-        background-color: var(--textColorWithe);
+        background-color: var(--Cyan);
         border-radius: 3vw;
         gap: 0.5vw;
-        margin-bottom: 8vw;
       }
     
       .buttonLogo {
@@ -190,7 +190,6 @@
         font-size: 1vw;
         font-weight: 700;
         color: black;
-        /* margin-top: 0.3vw; */
       }
 }
 
@@ -258,6 +257,7 @@
         align-items: center;
         gap: 1.5vw;
         padding-top: 7vw;
+        padding-bottom: 8vw;
       }
       .frameworkLogo {
         height: 8vw;
@@ -274,7 +274,7 @@
         background-color: var(--Cyan);
         border-radius: 3vw;
         gap: 0.5vw;
-        margin-bottom: 8vw;
+        /* margin-bottom: 0vw; */
       }
     
       .buttonLogo {
@@ -285,7 +285,6 @@
         font-size: 1.5vw;
         font-weight: 700;
         color: black;
-        /* margin-top: 0.3vw; */
       }
 }
 
@@ -352,6 +351,7 @@
     align-items: center;
     gap: 2vw;
     padding-top: 8vw;
+    padding-bottom: 8vw;
   }
   .frameworkLogo {
     height: 10vw;
@@ -365,10 +365,10 @@
     align-items: center;
     height: 6vw;
     width: 18vw;
+    /* background-color:red; */
     background-color:var(--Cyan);
     border-radius: 3vw;
     gap: 1vw;
-    margin-bottom: 8vw;
   }
 
   .buttonLogo {
@@ -379,6 +379,6 @@
     font-size: 1.5vw;
     font-weight: 700;
     color: black;
-    margin-top: 0.3vw;
+    margin-top: 0vw;
   }
 }

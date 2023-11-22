@@ -99,7 +99,7 @@ const HomeMobileView = () => {
 
       <div className={HomeMobileViewCss.linkIconAndSocialMediaParentContainer}>
         <PiLinkSimpleBold className={HomeMobileViewCss.linkIconStyle} />{" "}
-        <h6 className={HomeMobileViewCss.socialMediaTextStyle}>Socal Media</h6>
+        <h6 className={HomeMobileViewCss.socialMediaTextStyle}>Social Media</h6>
       </div>
 
       <div

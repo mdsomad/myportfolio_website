@@ -1,6 +1,6 @@
 const frontendProjectData = [
   {
-    appName: "Socal Media App",
+    appName: "Social Media App",
     screenshots: [
       "https://user-images.githubusercontent.com/103892160/256587202-c1ddc6ce-2835-458c-8f15-101258f63bbf.png",
       "https://user-images.githubusercontent.com/103892160/256587229-5fa16334-9910-46ea-9c74-d8682390064e.png",
