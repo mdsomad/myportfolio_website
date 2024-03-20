@@ -7,7 +7,7 @@ const crewData = [
   {
     name: "Md Yasin",
     role: "App Developer",
-    websiteLink: "https://yasin-portfolio-iode.vercel.app",
+    websiteLink: "https://yasinsportfolio.vercel.app",
   },
 ];
 

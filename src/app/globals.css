@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Caveat&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,6 +13,8 @@
   --mainBlack:rgba(0, 0, 0, 1);
   --mainCyan:rgba(1, 214, 254, 1);
   --AvatarTagShadowColor:rgba(0, 255, 255, 0.7);
+
+  --common-font: 'Allura'
 }
 
 a {

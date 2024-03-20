@@ -25,6 +25,7 @@
   padding-top: 0.2vw;
   font-size: 3.3vw;
   font-weight: 500;
+  /* font-family:var(--common-font); */
   color: var(--textColorWithe);;
 }
 .text3 {
