@@ -16,15 +16,15 @@ const frameworksData = [
   {
     name: "React.js",
     logo:"/images/react.svg",
-    percentageNumber: "50%",
-    Progress: "50",
+    percentageNumber: "70%",
+    Progress: "70",
     link: "https://react.dev/",
   },
   {
     name: "Next.js",
     logo:"/images/next-js.svg",
-    percentageNumber: "50%",
-    Progress: "50",
+    percentageNumber: "70%",
+    Progress: "70",
     link:"https://nextjs.org/",
   },
 ];

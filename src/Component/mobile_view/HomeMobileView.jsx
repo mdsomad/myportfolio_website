@@ -10,7 +10,7 @@ import useClipboard from "react-use-clipboard";
 
 const HomeMobileView = () => {
   const [isPhoneNumCopied, setPhoneNumCopied] = useClipboard("8942998873");
-  const [isEmailCopied, setEmailCopied] = useClipboard("k41594176@gmail.com");
+  const [isEmailCopied, setEmailCopied] = useClipboard("amirhamja.developer@gmail.com");
 
   return (
     <div className={HomeMobileViewCss.mainDiv}>
@@ -43,8 +43,8 @@ const HomeMobileView = () => {
       <p className={HomeMobileViewCss.descriptionTag}>
         I am a self taught programmer. <br /> Currently a App Developer as a
         career path. <br />
-        I've app development experience of over 2+ Years. <br />
-        And programming experience of 3 years.
+        I've app development experience of over 3+ Years. <br />
+        And programming experience of 4 years.
       </p>
 
       <div className={HomeMobileViewCss.playStoreLogoAndliveAppTextParentContainer}>
@@ -185,7 +185,7 @@ const HomeMobileView = () => {
         }}
       >
         <IoCall className={HomeMobileViewCss.callIcon} />
-        <h6 className={HomeMobileViewCss.phoneNumberText}>91+ 8942998873</h6>
+        <h6 className={HomeMobileViewCss.phoneNumberText}>+91 8942998873</h6>
         <MdOutlineContentCopy
           onClick={setPhoneNumCopied}
           className={HomeMobileViewCss.copyIcon}
@@ -204,7 +204,7 @@ const HomeMobileView = () => {
       >
         <MdEmail className={HomeMobileViewCss.emailIcon} />
         <h6 className={HomeMobileViewCss.phoneNumberText}>
-          k41594176@gmail.com
+         amirhamja.developer@gmail.com
         </h6>
         <MdOutlineContentCopy
           onClick={setEmailCopied}
