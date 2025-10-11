@@ -203,7 +203,7 @@ const HomeMobileView = () => {
         }}
       >
         <MdEmail className={HomeMobileViewCss.emailIcon} />
-        <h6 className={HomeMobileViewCss.phoneNumberText}>
+        <h6 className={HomeMobileViewCss.emailText}>
          amirhamja.developer@gmail.com
         </h6>
         <MdOutlineContentCopy

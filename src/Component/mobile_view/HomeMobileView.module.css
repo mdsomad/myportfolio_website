@@ -58,18 +58,18 @@
   width: 12vw;
   /* margin-left: 7vw; */
 }
-.playStoreLogoAndliveAppTextParentContainer{
+.playStoreLogoAndliveAppTextParentContainer {
   display: flex;
   height: 14vw;
   width: 100%;
-  flex-Direction:row;
-  padding-left:7vw;
-  margin-Bottom:3vw;
-  gap:3vw;
-  justify-Content:start;
-  align-Items:center;
+  flex-direction: row;
+  padding-left: 7vw;
+  margin-bottom: 3vw;
+  gap: 3vw;
+  justify-content: start;
+  align-items: center;
   /* border-Top: 0.5vw solid var(--Cyan); */
-  border-Bottom: 0.5vw solid var(--Cyan);
+  border-bottom: 0.5vw solid var(--Cyan);
 }
 .liveAppText {
   color: white;
@@ -100,31 +100,29 @@
   text-align: center;
 }
 
-.linkIconAndSocialMediaParentContainer{
+.linkIconAndSocialMediaParentContainer {
   display: flex;
   height: 14vw;
   width: 100%;
-  flex-Direction:row;
-  padding-left:7vw;
-  margin-Bottom:3vw;
-  gap:3vw;
-  justify-Content:start;
-  align-Items:center;
-  border-Top: 0.5vw solid var(--Cyan);
-  border-Bottom: 0.5vw solid var(--Cyan);
+  flex-direction: row;
+  padding-left: 7vw;
+  margin-bottom: 3vw;
+  gap: 3vw;
+  justify-content: start;
+  align-items: center;
+  border-top: 0.5vw solid var(--Cyan);
+  border-bottom: 0.5vw solid var(--Cyan);
 }
 
-.linkIconStyle{
+.linkIconStyle {
   color: #00bfff;
   font-size: 7.5vw;
 }
-.socialMediaTextStyle{
+.socialMediaTextStyle {
   font-size: 6vw;
   font-weight: 500;
   color: var(--textColorWithe);
 }
-
-
 
 .callIcon {
   color: #3fff00;
@@ -137,20 +135,25 @@
   margin-left: 5vw;
 }
 
-.copyIcon {
-  color: white;
-  font-size: 5vw;
-  margin-left: 22vw;
+.emailText {
+  color: var(--textColorWithe);
+  font-size: 4vw;
+  margin-left: 3vw;
 }
+
 .emailIcon {
   color: #00bfff;
   font-size: 8vw;
 }
-
+.copyIcon {
+  color: white;
+  font-size: 5vw;
+  margin-left: 27vw;
+}
 .copyMailIcon {
   color: white;
   font-size: 5vw;
-  margin-left: 10vw;
+  margin-left: 3vw;
 }
 
 /** tableteView size */
@@ -194,6 +197,6 @@
   }
   .facebook_logo_img {
     width: 9vw;
-    height:9vw;
+    height: 9vw;
   }
 }
